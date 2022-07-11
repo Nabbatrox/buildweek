@@ -3,9 +3,267 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Vetrina ristorante Restaurant's e food blog">
+    <script src="https://kit.fontawesome.com/7162ad06e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Restaurant's</title>
+
 </head>
 <body>
-    
+    <header>
+
+        <nav id="navigation_bar">
+
+            <input id="toggle" type="checkbox">
+            <label for="toggle" id="bars"><i class="fa-solid fa-bars"></i></label>
+            <label for="toggle" id="ics"><i class="fa-solid fa-xmark"></i></label>
+            <img src="./assets/images/logo.png" alt="Restaurant's Logo">
+
+            <ul id="sottomenu">
+
+              <li><a href="#"></a>Home</li>
+
+              <li><a href="#"></a>About Us</li>
+
+              <li><a href="#"></a>Blog</li>
+
+              <li><a href="#"></a>Menu</li>
+
+              <li><a href="#"></a>News</li>
+
+              <li><a href="#"></a>Contact</li>
+
+            </ul>
+        
+          </nav>
+
+    </header>
+
+    <main>
+
+        <section id="slider"> 
+
+            <h3>FEATURED <span class="orange">WORKS</span></h3>
+
+            <div class="container">
+	
+                <input type="radio" id="i1" name="images" checked />
+                <input type="radio" id="i2" name="images" />
+                <input type="radio" id="i3" name="images" />
+                <input type="radio" id="i4" name="images" />
+                <input type="radio" id="i5" name="images" />	
+                <input type="radio" id="i6" name="images" />
+                <input type="radio" id="i7" name="images" />
+                <input type="radio" id="i8" name="images" />	
+                
+                <div class="slide_img" id="one">			
+                        
+                        <img src="./assets/images/slider/slider-img-1.jpg">
+                        
+                    
+                            <label class="next" for="i2"><span>&#x203a;</span></label>	
+                    
+                </div>
+                
+                <div class="slide_img" id="two">
+                    
+                        <img src="./assets/images/slider/slider-img-2.jpg" >
+                        
+                    
+                            <label class="next" for="i3"><span>&#x203a;</span></label>
+                    
+                </div>
+                        
+                <div class="slide_img" id="three">
+                        <img src="./assets/images/slider/slider-img-3.jpg">	
+                        
+                    
+                            <label class="next" for="i4"><span>&#x203a;</span></label>
+                </div>
+            
+                <div class="slide_img" id="four">
+                        <img src="./assets/images/slider/slider-img-4.jpg">	
+                        
+                    
+                            <label class="next" for="i5"><span>&#x203a;</span></label>
+                </div>
+            
+                <div class="slide_img" id="five">
+                        <img src="./assets/images/slider/slider-img-1.jpg">	
+                        
+                    
+                            <label class="next" for="i6"><span>&#x203a;</span></label>
+
+                    </div>
+
+                <div class="slide_img" id="six">
+                        <img src="./assets/images/slider/slider-img-2.jpg">	
+                        
+                    
+                            <label class="next" for="i7"><span>&#x203a;</span></label>
+
+                    </div>
+
+                <div class="slide_img" id="seven">
+                        <img src="./assets/images/slider/slider-img-3.jpg">	
+                        
+                    
+                            <label class="next" for="i8"><span>&#x203a;</span></label>
+
+                    </div>
+
+                <div class="slide_img" id="eight">
+                        <img src="./assets/images/slider/slider-img-4.jpg">	
+                        
+                            <label class="next" for="i1"><span>&#x203a;</span></label>
+            
+                    </div>
+            
+                <div id="nav_slide">
+                    <label for="i1" class="dots" id="dot1"></label>
+                    <label for="i2" class="dots" id="dot2"></label>
+                    <label for="i3" class="dots" id="dot3"></label>
+                    <label for="i4" class="dots" id="dot4"></label>
+                    <label for="i5" class="dots" id="dot5"></label>
+                    <label for="i6" class="dots" id="dot6"></label>
+                    <label for="i7" class="dots" id="dot7"></label>
+                    <label for="i8" class="dots" id="dot8"></label>
+                </div>
+                    
+            </div>
+            
+
+        </section>
+
+
+        <section id="aboutus">
+
+            <div>
+
+                <img src="./assets/images/cooker-img.png">
+
+                <h1>Your <span class="orange">Restaurant's</span> Website Has To Look <span class="orange">Good</span></h1>
+
+                <hr>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, enim deleniti quibusdam sed rem repellendus magni laboriosam. Praesentium dolore cumque natus expedita quis veritatis! Atque nostrum mollitia qui dolorem architecto?
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="blog">
+
+            <h2>Latest <span class="orange">From </span>the <span class="orange">Blog</span></h2>
+
+            <hr>
+
+            <article id="blog-article">
+
+                <figure class="blog-flex"> 
+                    <img src="./assets/images/blog/blog-img-1.jpg">                  
+                    <figcaption class="fc">
+                        <h3>Homestyle Chicken Pot Style</h3>
+                        <hr>
+                        <p>Prepared in true New England fashion. Tender all-white meat chicken simmered...</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="blog-flex">
+                    <img src="./assets/images/blog/blog-img-2.jpg">                    
+                    <figcaption class="fc">
+                        <h3>Homestyle Chicken Pot Style</h3>
+                        <hr>
+                        <p>Prepared in true New England fashion. Tender all-white meat chicken simmered...</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="blog-flex">
+                   <figcaption class="fc">
+                        <h3>Homestyle Chicken Pot Style</h3>
+                        <hr>
+                        <p>Prepared in true New England fashion. Tender all-white meat chicken simmered...</p>
+                    </figcaption>
+                    <img src="./assets/images/blog/blog-img-3.jpg">  
+                </figure>
+
+                <figure class="blog-flex">
+                                   
+                    <figcaption class="fc">
+
+                        <h3>Homestyle Chicken Pot Style</h3>
+
+                        <hr>
+
+                        <p>
+
+                            Prepared in true New England fashion. Tender all-white meat chicken simmered...
+
+                        </p>
+
+                    </figcaption> 
+                    <img src="./assets/images/blog/blog-img-4.jpg">
+                </figure>
+
+                <figure class="blog-flex">
+                    <img src="./assets/images/blog/blog-img-5.jpg">                   
+                    <figcaption class="fc">
+
+                        <h3>Homestyle Chicken Pot Style</h3>
+
+                        <hr>
+
+                        <p>
+
+                            Prepared in true New England fashion. Tender all-white meat chicken simmered...
+
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure class="blog-flex">
+                    <img src="./assets/images/blog/blog-img-6.jpg">                    
+                    <figcaption class="fc">
+                        <h3>Homestyle Chicken Pot Style</h3>
+
+                        <hr>
+
+                        <p>Prepared in true New England fashion. Tender all-white meat chicken simmered...</p>
+                    </figcaption>
+                </figure>
+
+            </article>
+
+            <div>
+
+                <a href="#">More Info</a>
+
+            </div>
+
+        </section>
+
+        <section id="menu">
+
+            <h2>our <span class="orange">MENU </span>the<span class="orange">PRICE</span></h2>
+
+            <hr>
+
+            <p>
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nihil similique voluptas, aut obcaecati non vero delectus, adipisci officiis veniam et quia repudiandae, vel veritatis voluptatibus placeat quam atque tenetur.
+
+            </p>
+
+
+
+
+
+
+        </section>
+
+    </main> 
+
 </body>
 </html>
