@@ -8,3 +8,31 @@ html {
     
 }
 
+#blog .bg {
+
+    background-image: url(/assets/images/blog/blog-bg.jpg);
+
+}
+#newsletter .bg {
+
+    background-image: url(/assets/images/subscribe-bg.jpg);
+
+}
+
+
+.bgsett {
+
+    position: relative;
+
+
+}
+
+.bg {
+
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
