@@ -5,34 +5,125 @@ html {
 
     font-family: 'ufonts';
     text-align: center;
-    
+ 
 }
 
-#blog .bg {
+footer i {
+
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.icona {
+
+    background-color: #b0b0b0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 10px; 
+
+}
+
+.orange {
+
+    color: orangered;
+    font-weight: bold;
+
+}
+
+h1, h2, h3 {
+
+    padding: 2.3rem 0;
+
+}
+
+h1 {
+    
+    font-size: 1.3rem;
+
+}
+
+h1 span, h2 span { 
+
+    font-size: 2rem;
+
+}
+
+h2 {
+
+    font-size: 1.6rem;
+
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+h3 span {
+
+    color: #fe5c40;
+
+}
+
+p {
+
+    color: gray;
+    line-height: 1.8rem;
+    padding: 2rem 0;
+
+}
+
+hr {
+
+    width: 50%;
+
+}
+
+
+.setting {
+
+    margin: 0 20px;
+
+}
+
+.bgsett {
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+#blog {
 
     background-image: url(/assets/images/blog/blog-bg.jpg);
 
 }
-#newsletter .bg {
+
+#newsletter {
 
     background-image: url(/assets/images/subscribe-bg.jpg);
 
 }
 
+.pattern {
 
-.bgsett {
-
-    position: relative;
-
-
-}
-
-.bg {
-
-    background-repeat: no-repeat;
-    background-position: cover;
+    background-attachment: fixed;
+    background-image: url(/assets/images/overlay-pattern.png) black;
+    background-size: cover;
+    background-repeat: repeat;
     width: 100%;
-    position: absolute;
-    z-index: -2;
+
 }
 
+section {
+
+    padding: 50px 0;
+
+}
