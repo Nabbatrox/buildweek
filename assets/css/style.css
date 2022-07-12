@@ -1,4 +1,6 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
+/* IMPOSTAZIONI GLOBALI */
 @font-face { font-family: ufonts; src: url(../fonts/ufonts.com_tw-cen-mt.ttf);}
 
 html {
@@ -6,25 +8,6 @@ html {
     font-family: 'ufonts';
     text-align: center;
  
-}
-
-footer i {
-
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-
-}
-
-.icona {
-
-    background-color: #b0b0b0;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-    margin-right: 10px; 
-
 }
 
 .orange {
@@ -91,6 +74,16 @@ hr {
 
 }
 
+section {
+
+    padding: 50px 0;
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* background imgs */
+
 .bgsett {
 
     background-attachment: fixed;
@@ -122,8 +115,44 @@ hr {
 
 }
 
-section {
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
-    padding: 50px 0;
+/* FOOTER */
+
+footer i {
+
+    color: white;
+    font-size: 18px;
+    padding: 10px;
 
 }
+
+.icona {
+
+    background-color: #b0b0b0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 10px; 
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
