@@ -1,0 +1,10 @@
+
+@font-face { font-family: ufonts; src: url(../fonts/ufonts.com_tw-cen-mt.ttf);}
+
+html {
+
+    font-family: 'ufonts';
+    text-align: center;
+    
+}
+
