@@ -129,6 +129,11 @@ section {
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*MENU*/
+
+@media screen and (max-width: 768px) {
+    
+
+
 #menu{
     padding-bottom: 150px;
 }
@@ -145,6 +150,7 @@ padding: 1.2rem 0 0;
 
 .price + p{
     padding: 1rem 0 2rem;
+    line-height:1.5rem ;
 }
 
 #menu-btn{
@@ -165,9 +171,23 @@ padding: 1.2rem 0 0;
     font-weight: bold;
 }
 
+}
+
+@media screen and (min-widht:768px){
+    
+
+
+}
+
+
+
+
+
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*NEWSLETTER*/
+@media screen and (max-width:768px) {
+    
 
 #newsletter .pattern .setting h2{
     color: white;
@@ -182,6 +202,7 @@ padding: 1.2rem 0 0;
 #newsletter .pattern .setting form{
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 80px;
 }
 
 
@@ -201,10 +222,11 @@ padding: 1.2rem 0 0;
     width: 200px;
     height: 60px;
     font-weight: bold;
+    
    
 }
 
-
+}
 
 
 
