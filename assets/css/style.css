@@ -116,6 +116,33 @@ section {
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
+/*header */
+
+
+#bg-header{
+
+    background-image: url(../images/header.jpg);
+    height: 80vh;
+    
+}
+
+#header-container{
+    background-color: white;
+    opacity: 0.5; 
+    padding: 1.2;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width:500px;
+    margin: 0 auto;
+}
+
+
+
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -129,9 +156,6 @@ section {
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*MENU*/
-
-@media screen and (max-width: 768px) {
-    
 
 
 #menu{
@@ -171,11 +195,69 @@ padding: 1.2rem 0 0;
     font-weight: bold;
 }
 
-}
 
-@media screen and (min-widht:768px){
+
+@media screen and (min-width:768px){
+   
+    .dish-sett{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+    }
+
+   .dish{
+        position: relative;
+    }
     
-
+    #dish1::before{
+        content: ' ';
+        border: 1px dotted black ;
+        bottom: 5;
+        left:170;
+        position: absolute;
+        width: 645px;
+    }
+    #dish2::before{
+        content: ' ';
+        border: 1px dotted black ;
+        bottom: 5;
+        left:267;
+        position: absolute;
+        width: 550px;
+    }
+    #dish3::before{
+        content: ' ';
+        border: 1px dotted black ;
+        bottom: 5;
+        left:260;
+        position: absolute;
+        width: 550px;
+    }
+    #dish4::before{
+        content: ' ';
+        border: 1px dotted black ;
+        bottom: 5;
+        left:173;
+        position: absolute;
+        width: 640px;
+    }
+    #dish5::before{
+        content: ' ';
+        border: 1px dotted black ;
+        bottom: 5;
+        left:400;
+        position: absolute;
+        width: 415px;
+    }
+    #dish6::before{
+        content: ' ';
+        border: 1px dotted black ;
+        bottom: 5;
+        left:142;
+        position: absolute;
+        width: 670px;
+    }
 
 }
 
@@ -186,7 +268,7 @@ padding: 1.2rem 0 0;
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*NEWSLETTER*/
-@media screen and (max-width:768px) {
+
     
 
 #newsletter .pattern .setting h2{
@@ -226,7 +308,22 @@ padding: 1.2rem 0 0;
    
 }
 
+@media screen and (min-width: 768px) {
+
+    #newsletter .pattern .setting form input{
+        width: 450px;
+    }
+
+    .setting form{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    
+    
 }
+
 
 
 
