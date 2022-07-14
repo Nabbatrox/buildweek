@@ -74,60 +74,52 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-       
     }
 
-   .dish{
-        position: relative;
-    }
-    
-    #dish1::before{
-        content: ' ';
-        border: 1px dotted black ;
+    .dish-border1{
+       
+        border-bottom: 1px dotted black;
         bottom: 5;
-        left:170;
-        position: absolute;
-        width: 645px;
+        width: 78%;
     }
-    #dish2::before{
-        content: ' ';
-        border: 1px dotted black ;
+
+    .dish-border2{
+       
+        border-bottom: 1px dotted black;
         bottom: 5;
-        left:267;
-        position: absolute;
-        width: 550px;
+        width: 65%;
     }
-    #dish3::before{
-        content: ' ';
-        border: 1px dotted black ;
+
+    .dish-border3{
+       
+        border-bottom: 1px dotted black;
         bottom: 5;
-        left:260;
-        position: absolute;
-        width: 550px;
+        width: 65%;
     }
-    #dish4::before{
-        content: ' ';
-        border: 1px dotted black ;
+
+    .dish-border4{
+       
+        border-bottom: 1px dotted black;
         bottom: 5;
-        left:173;
-        position: absolute;
-        width: 640px;
+        width: 77%;
     }
-    #dish5::before{
-        content: ' ';
-        border: 1px dotted black ;
+
+    .dish-border5{
+       
+        border-bottom: 1px dotted black;
         bottom: 5;
-        left:400;
-        position: absolute;
-        width: 415px;
+        width: 48%;
     }
-    #dish6::before{
-        content: ' ';
-        border: 1px dotted black ;
+
+    .dish-border6{
+       
+        border-bottom: 1px dotted black;
         bottom: 5;
-        left:142;
-        position: absolute;
-        width: 670px;
+        width: 81%;
+    }
+
+    .price{
+        text-align: right;
     }
 
     /*/////////////////// NEWSLETTER ///////////////////////////////*/
