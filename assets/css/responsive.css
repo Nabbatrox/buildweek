@@ -66,71 +66,86 @@
 
 /*/////////////////////RESPONSIVE 768PX//////////////////////////*/
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
 
     /*///////////////////// MENU /////////////////////*/
-  
-    .dish-sett{
+
+    .dish-sett {
+
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
     }
 
-    .dish-border1{
-       
+    .dish-border1 {
+
         border-bottom: 1px dotted black;
         bottom: 5;
         width: 78%;
+
     }
 
-    .dish-border2{
-       
+    .dish-border2 {
+
         border-bottom: 1px dotted black;
         bottom: 5;
         width: 65%;
+
     }
 
-    .dish-border3{
-       
+    .dish-border3 {
+
         border-bottom: 1px dotted black;
         bottom: 5;
         width: 65%;
+
     }
 
-    .dish-border4{
-       
+    .dish-border4 {
+
         border-bottom: 1px dotted black;
         bottom: 5;
         width: 77%;
+
     }
 
-    .dish-border5{
-       
+    .dish-border5 {
+
         border-bottom: 1px dotted black;
         bottom: 5;
         width: 48%;
+
     }
 
-    .dish-border6{
-       
+    .dish-border6 {
+
         border-bottom: 1px dotted black;
         bottom: 5;
         width: 81%;
+
     }
 
-    .price{
+    .price {
+
         text-align: right;
+
     }
 
     /*/////////////////// NEWSLETTER ///////////////////////////////*/
 
-    #newsletter .pattern .setting form input{
+    #newsletter .pattern .setting form input {
+
         width: 450px;
+
     }
 
-    .setting form{
+    .setting form {
+
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+
     }
 
     /*///////////////////// BLOG //////////////////////////////////*/
@@ -165,10 +180,7 @@
 
     #blog-btn {
 
-        color: #f5f5f5;
-        background-color: #fe5c40;
         padding: 35px 100px;
-        position: absolute;
         right: 34%;
         margin-top: 30px;
 
@@ -181,50 +193,65 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
+    }
 
     /* CONTACTUS */
 
-    #contactus-btn{
+    #contactus-btn {
+
         width: 70%;
         margin-left: 15%;
-    
+        position: relative;
+        right: 60;
+
     }
 
     /* FOOTER */
 
-    address div{
+    address div {
+
         display: inline-block;
         font-size: 0.9rem;
+
     }
-    #footer-flex{
+
+    #footer-flex {
+
         display: flex;
         flex-direction: column;
         justify-content: center;
+
     }
 
-    
-    
+
+
 
 }
 
 /*//////////////////RESPONSIVE 1000PX //////////////////////////////////*/
 
-@media screen and (min-width:1000px){
-    address div{
+@media screen and (min-width:1000px) {
+
+    address div {
+
         display: block;
+
     }
-    #footer-flex{
+
+    #footer-flex {
+
         flex-direction: row;
+
     }
+
 }
 
 /*//////////////////RESPONSIVE 1024PX //////////////////////////////////*/
 
 @media screen and (min-width: 1024px) {
 
-    /* BLOG */
+    /*////////////////////////////// BLOG /////////////////////////////////*/
 
     #blog-article {
 
@@ -236,52 +263,75 @@
 
     .blog-flex {
 
-        display: flex;
-        flex-direction: row;
         align-items: flex-start;
-        position: relative;
 
     }
 
     #blog-article h3 {
 
         padding-top: 50px;
+
     }
 
 
     .blog-flex img {
 
         width: 50%;
-  
+
     }
 
     #blog-btn {
 
-        color: #f5f5f5;
-        background-color: #fe5c40;
-        padding: 35px 100px;
-        position: absolute;
-        right: 34%;
-        bottom: -27;
+        bottom: -36;
         right: 0;
 
     }
 
     .rombo {
 
-        background-color: white;
-        height: 30px;
-        width: 30px;
-        /* border: 1px solid black; */
-        position: absolute;
         left: 47%;
         top: 120px;
         transform: rotate(45deg);
 
     }
 
+    /*///////////////////// MENU /////////////////////*/
 
+    .dish-border1 {
 
+        width: 83%;
+
+    }
+
+    .dish-border2 {
+
+        width: 74%;
+
+    }
+
+    .dish-border3 {
+
+        width: 74%;
+
+    }
+
+    .dish-border4 {
+
+        width: 83%;
+
+    }
+
+    .dish-border5 {
+
+        width: 61%;
+
+    }
+
+    .dish-border6 {
+
+        width: 86%;
+
+    }
 
 }
 
@@ -289,25 +339,10 @@
 
 @media screen and (min-width: 1200px) {
 
-    #blog-btn {
-
-        color: #f5f5f5;
-        background-color: #fe5c40;
-        padding: 35px 100px;
-        position: absolute;
-        right: 34%;
-        bottom: -27;
-        right: 0;
-
-    }
+    /*/////////////////////////////// BLOG //////////////////////////////////////*/
 
     .rombo {
 
-        background-color: white;
-        height: 30px;
-        width: 30px;
-        /* border: 1px solid black; */
-        position: absolute;
         left: 47.5%;
         top: 120px;
         transform: rotate(45deg);
@@ -324,11 +359,52 @@
 
         height: 100%;
 
-        
     }
-    #footer-flex{
+
+    /*///////////////////// MENU /////////////////////*/
+
+    .dish-border1 {
+
+        width: 85%;
+
+    }
+
+    .dish-border2 {
+
+        width: 77%;
+
+    }
+
+    .dish-border3 {
+
+        width: 78%;
+
+    }
+
+    .dish-border4 {
+
+        width: 85%;
+
+    }
+
+    .dish-border5 {
+
+        width: 66%;
+
+    }
+
+    .dish-border6 {
+
+        width: 88%;
+
+    }
+
+    /*///////////////////////////////////////// FOOTER ///////////////////////////////////////*/
+
+    #footer-flex {
+
         justify-content: space-evenly;
+
     }
-    
 
 }
