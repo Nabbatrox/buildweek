@@ -398,10 +398,58 @@ padding: 1.2rem 0 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-       
     }
 
-   .dish{
+    .dish-border1{
+       
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 78%;
+    }
+
+    .dish-border2{
+       
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 65%;
+    }
+
+    .dish-border3{
+       
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 65%;
+    }
+
+    .dish-border4{
+       
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 77%;
+    }
+
+    .dish-border5{
+       
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 48%;
+    }
+
+    .dish-border6{
+       
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 81%;
+    }
+
+    .price{
+        text-align: right;
+    }
+
+
+    /*
+    
+      .dish{
         position: relative;
     }
     
@@ -453,7 +501,7 @@ padding: 1.2rem 0 0;
         position: absolute;
         width: 670px;
     }
-
+*/
 }
 
 
