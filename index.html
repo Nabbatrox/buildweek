@@ -51,7 +51,7 @@
 
         <section id="slider">
             <div class="setting">
-                <h3>FEATURED <span class="orange">WORKS</span></h3>
+                <h3>FEATURED <span class="orange2">WORKS</span></h3>
 
                 <div class="container">
 
@@ -317,7 +317,7 @@
 
                 </div>
 
-                <h3>FEATURED <span class="orange">ON THE WEEK </span></h3>
+                <h3>FEATURED <span class="orange2">ON THE WEEK </span></h3>
 
 
                 <ul>
@@ -417,17 +417,19 @@
             <div class="setting">
 
                 <h2>our <span class="orange">CONTACT US</span></h2>
-                <hr>
-                <h3>SIGN UP FOR <span class="orange">EMAIL ALERTS</span></h3>
+                
+                <div class="lefta">
+                <h3>SIGN UP FOR <span class="orange2">EMAIL ALERTS</span></h3>
 
                 <form method="post">
 
                     <input type="text" placeholder="Write your full name here..." required>
                     <input type="email" placeholder="Write your email address here.." required>
-                    <textarea id="textarea" placeholder="Write your message here..." required></textarea>
-                    <button type="submit" id="submit">SEND YOUR MESSAGE</button>
+                    <textarea id="textarea" rows="8" placeholder="Write your message here..." required></textarea>
+                    <button type="submit" id="contactus-btn">SEND YOUR MESSAGE</button>
 
                 </form>
+            </div>
             </div>
         </section>
 
@@ -435,33 +437,34 @@
 
 
 
-            <section class="setting">
+            <section class="setting" id="footer-flex">
 
-                <div>
+                <div class="lefta">
 
                     <h3>CONTACT <span class="orange">INFO</span></h3>
 
-                    <address>
+                    <address class="ffc">
 
                         <div>
 
                             <h4><i class="fa-solid fa-phone"></i>Telephone</h4>
 
-                            <p>(000) 123 456 78 - (000) 123 4567 89</p>
+                            <a href="tel:(000) 123 456 78">(000) 123 456 78 -</a>  <a href="tel:(000) 123 4567 89">(000) 123 4567 89</a>
 
                         </div>
 
                         <div>
 
                             <h4><i class="fa-solid fa-location-dot"></i>Address</h4>
-                            <p>2046 Blue Spruce Lane Laurel Canada</p>
+                            <a href="https://goo.gl/maps/Cpe6RKkHoYguPbRh8" target="_blank">2046 Blue Spruce Lane Laurel Canada</a>
 
                         </div>
 
                         <div>
 
                             <h4><i class="fa-solid fa-envelope"></i>E mail</h4>
-                            <p>rest@gmail.com - rest@mail.ru</p>
+                            <a href="mailto:rest@gmail.com">rest@gmail.com -</a>
+                           <a href="mailto:rest@mail.ru">rest@mail.ru</a> 
 
                         </div>
 
@@ -470,7 +473,7 @@
 
                 </div>
 
-                <div>
+                <div class="lefta ffc" id="latestposts">
 
                     <h3>LATEST <span class="orange">BLOG POSTS</span></h3>
 
@@ -509,7 +512,7 @@
 
                 </div>
 
-                <div>
+                <div class="lefta ffc" id="photofooter">
 
                     <h3>
 
@@ -517,12 +520,12 @@
 
                     </h3>
 
-                    <img src="./assets/images/photo/photo-1.jpg" alt="carciofi">
-                    <img src="./assets/images/photo/photo-2.jpg" alt="banane">
-                    <img src="./assets/images/photo/photo-3.jpg" alt="cose">
-                    <img src="./assets/images/photo/photo-4.jpg" alt="">
+                    <img src="./assets/images/photo/photo-1.jpg" alt="Sweets">
+                    <img src="./assets/images/photo/photo-2.jpg" alt="Sandwich">
+                    <img src="./assets/images/photo/photo-3.jpg" alt="Veggies">
+                    <img src="./assets/images/photo/photo-4.jpg" alt="Fresh Pasta">
 
-                    <div>
+                    <div id="followus" class="lefta">
 
 
                         <h3>
@@ -531,11 +534,14 @@
 
                         </h3>
 
-                        <div class="icona"><i class="fa-brands fa-twitter"></i></div>
-                        <div class="icona"><i class="fa-brands fa-facebook-f"></i></div>
-                        <div class="icona"><i class="fa-brands fa-dribbble"></i></div>
-                        <div class="icona"><i class="fa-brands fa-behance"></i></div>
+                        <a href="https://twitter.com" target="_blank" class="icona"><i class="fa-brands fa-twitter"></i></a>
 
+                        <a href="https://www.facebook.com" target="_blank" class="icona"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="https://dribbble.com" target="_blank" class="icona"><i class="fa-brands fa-dribbble"></i></a>
+
+                        <a href="https://www.behance.net" target="_blank" class="icona"><i class="fa-brands fa-behance"></i></a>
+                        
                     </div>
 
 
@@ -544,11 +550,11 @@
 
             </section>
 
-            <div>
+            <div id="cr">
 
                 <p>
 
-                    Copyright &copy; 2014 - All-Rights Reserved. Design and Developed By <a href="#">Themefisher</a>
+                    Copyright &copy; 2014 - All-Rights Reserved.Design and Developed By <a href="https://themefisher.com/" target="_blank">Themefisher</a>
 
                 </p>
 
