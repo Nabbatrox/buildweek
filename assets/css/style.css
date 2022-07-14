@@ -119,31 +119,6 @@ section {
 /*header */
 
 
-#bg-header{
-
-    background-image: url(../images/header.jpg);
-    height: 80vh;
-    
-}
-
-#header-container{
-    background-color: white;
-    opacity: 0.5; 
-    padding: 1.2;
-    position: sticky;
-    top:0;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width:500px;
-    margin: 0 auto;
-}
-
-
-
-
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*ABOUTUS*/
