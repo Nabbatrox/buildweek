@@ -1,13 +1,16 @@
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* IMPOSTAZIONI GLOBALI */
-@font-face { font-family: ufonts; src: url(../fonts/ufonts.com_tw-cen-mt.ttf);}
+@font-face {
+    font-family: ufonts;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+}
 
 html {
 
     font-family: 'ufonts';
     text-align: center;
- 
+
 }
 
 .orange {
@@ -17,19 +20,22 @@ html {
 
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 
     padding: 2rem 0;
 
 }
 
 h1 {
-    
+
     font-size: 1.3rem;
 
 }
 
-h1 span, h2 span { 
+h1 span,
+h2 span {
 
     font-size: 2rem;
 
@@ -109,19 +115,20 @@ section {
 
     h1 {
 
-        font-size: 1.8rem;
+        font-size: 2.2rem;
 
 
     }
 
-    h1 span, h2 span {
+    h1 span,
+    h2 span {
 
         font-size: 2.8rem;
-    } 
+    }
 
     h2 {
 
-        font-size: 1.8rem;
+        font-size: 2.2rem;
 
     }
 
@@ -133,7 +140,7 @@ section {
 
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
 
     .setting {
 
@@ -141,10 +148,10 @@ section {
         margin: 0 auto;
 
     }
-    
+
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 
     .setting {
 
@@ -152,7 +159,7 @@ section {
         margin: 0 auto;
 
     }
-    
+
 }
 
 
@@ -213,7 +220,7 @@ section {
     background-position: center;
     height: 500px;
     z-index: 1;
-    
+
 
 }
 
@@ -269,6 +276,7 @@ section {
     width: 100%;
 
 }
+
 .blog-flex hr {
 
     width: 30%;
@@ -290,7 +298,7 @@ section {
 
 #blog-article {
 
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 50px;
     position: relative;
     z-index: 2;
@@ -314,7 +322,7 @@ section {
 
 }
 
-#blog-btn a { 
+#blog-btn a {
 
     color: #f5f5f5;
     font-size: 1rem;
@@ -355,7 +363,7 @@ footer i {
     height: 40px;
     width: 40px;
     display: inline-block;
-    margin-right: 10px; 
+    margin-right: 10px;
 
 }
 
@@ -363,21 +371,22 @@ footer i {
 
 
 @media screen and (min-width: 768px) {
- /*GlOBAL MEDIA @768px*/
+    /*GlOBAL MEDIA @768px*/
 
 
-    
+
 
     .blog-flex {
 
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         align-items: center;
         position: relative;
 
     }
 
-    figure img, .fc {
+    figure img,
+    .fc {
 
         flex-basis: 50%;
 
@@ -388,22 +397,29 @@ footer i {
         background-color: white;
         height: 30px;
         width: 30px;
-        /* border: 1px solid black; */
         position: absolute;
         left: 48%;
         top: 60px;
         transform: rotate(45deg);
-        
+
     }
 
     #blog-btn {
 
         color: #f5f5f5;
         background-color: #fe5c40;
-        padding: 30px 90px;
+        padding: 35px 100px;
         position: absolute;
         right: 34%;
-     
+        margin-top: 30px;
+
+    }
+
+    #aboutus-flex {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
@@ -416,31 +432,39 @@ footer i {
     #blog-article {
 
         display: grid;
-        grid-template-columns: repeat(2,auto);
-        grid-template-rows: repeat(3,auto);
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
 
     }
 
     .blog-flex {
 
         display: flex;
-        flex-direction: row; 
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
         position: relative;
 
     }
 
     #blog-article h3 {
 
-        padding-top: 10px;
+        padding-top: 50px;
     }
 
-    
-    figure img, .fc {
 
-        flex-basis: 50%;
+    .blog-flex img {
 
+        width: 50%;
+
+        
     }
+
+    /* .fc {
+
+        padding: 20px;
+        
+    } */
+
 
     #blog-btn {
 
@@ -449,7 +473,9 @@ footer i {
         padding: 30px 90px;
         position: absolute;
         right: 34%;
-     
+        bottom: -27;
+        right: 0;
+
     }
 
     .rombo {
@@ -459,28 +485,56 @@ footer i {
         width: 30px;
         /* border: 1px solid black; */
         position: absolute;
-        left: 48.5%;
-        top: 60px;
+        left: 47%;
+        top: 120px;
         transform: rotate(45deg);
+
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #blog-btn {
+
+        color: #f5f5f5;
+        background-color: #fe5c40;
+        padding: 30px 90px;
+        position: absolute;
+        right: 34%;
+        bottom: -27;
+        right: 0;
+
+    }
+
+    .rombo {
+
+        background-color: white;
+        height: 30px;
+        width: 30px;
+        /* border: 1px solid black; */
+        position: absolute;
+        left: 47.5%;
+        top: 120px;
+        transform: rotate(45deg);
+
+    }
+
+    .blog-flex figcaption h3 {
+
+        padding-bottom: 50px
+
+    }
+
+    .blog-flex img {
+
+        height: 100%;
+
         
     }
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
