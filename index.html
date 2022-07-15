@@ -8,6 +8,7 @@
     <meta name="description" content="Vetrina ristorante Restaurant's e food blog">
     <script src="https://kit.fontawesome.com/7162ad06e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Restaurant's</title>
@@ -15,41 +16,49 @@
 </head>
 
 <body>
-    <header >
-    
+
     <div class="bgheader">
-        <div class="pattern"></div>
+        
+    
+        
+    </div>
+
+    <div id="pos-sticky" class="setting">
+        
+        <a href="./index.html"><img src="./assets/images/logo.png" alt="Restaurant's Logo"></a>
+        <nav id="topnav">
+        <input id="toggle" type="checkbox">
+          <label for="toggle" class="bars"><i class="fa fa-bars"></i></label>
+          <label for="toggle" class="ics"><i class="fa-solid fa-x"></i></label>
+          
             
-            
-
-
-
-        <nav class="setting" id="navigation_bar">
-
-            <input id="toggle" type="checkbox">
-            <label for="toggle" id="bars"><i class="fa-solid fa-bars"></i></label>
-            <label for="toggle" id="ics"><i class="fa-solid fa-xmark"></i></label>
-            <img src="./assets/images/logo.png" alt="Restaurant's Logo">
-
+                
+           
             <ul id="sottomenu">
+            
 
-                <li><a href="#"></a>Home</li>
+                <li><a href="./index.html">Home</a></li>
 
-                <li><a href="#"></a>About Us</li>
+                <li><a href="#aboutus">About Us</a></li>
 
-                <li><a href="#"></a>Blog</li>
+                <li><a href="#blog">Blog</a></li>
 
-                <li><a href="#"></a>Menu</li>
+                <li><a href="#menu">Menu</a></li>
 
-                <li><a href="#"></a>News</li>
+                <li><a href="#newsletter">News</a></li>
 
-                <li><a href="#"></a>Contact</li>
+                <li><a href="#footer-flex">Contacts</a></li>
 
             </ul>
+            
+          
+        </nav> 
 
-        </nav>
-
-    </div>
+        
+        
+        
+</div>
+    
 
 
     <main>
@@ -57,95 +66,80 @@
         <section id="slider">
             <div class="setting">
                 <h3>FEATURED <span class="orange2">WORKS</span></h3>
-
-                <div class="container">
-
-                    <input type="radio" id="i1" name="images" checked />
-                    <input type="radio" id="i2" name="images" />
-                    <input type="radio" id="i3" name="images" />
-                    <input type="radio" id="i4" name="images" />
-                    <input type="radio" id="i5" name="images" />
-                    <input type="radio" id="i6" name="images" />
-                    <input type="radio" id="i7" name="images" />
-                    <input type="radio" id="i8" name="images" />
-
-                    <div class="slide_img" id="one">
-
-                        <img src="./assets/images/slider/slider-img-1.jpg">
-
-
-                        <label class="next" for="i2"><span>&#x203a;</span></label>
-
+                <div id="showmustgoon">
+                    <div class="slide-container swiper">
+                <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    
+                        <div class="image-content swiper-slide">
+                
+                            <div class="card-image">
+                                <img src="./assets/images/slider/slider-img-1.jpg" alt="Prima Foto" class="card-img">
+                            </div>
+                        
                     </div>
-
-                    <div class="slide_img" id="two">
-
-                        <img src="./assets/images/slider/slider-img-2.jpg">
-
-
-                        <label class="next" for="i3"><span>&#x203a;</span></label>
-
-                    </div>
-
-                    <div class="slide_img" id="three">
-                        <img src="./assets/images/slider/slider-img-3.jpg">
-
-
-                        <label class="next" for="i4"><span>&#x203a;</span></label>
-                    </div>
-
-                    <div class="slide_img" id="four">
-                        <img src="./assets/images/slider/slider-img-4.jpg">
-
-
-                        <label class="next" for="i5"><span>&#x203a;</span></label>
-                    </div>
-
-                    <div class="slide_img" id="five">
-                        <img src="./assets/images/slider/slider-img-1.jpg">
-
-
-                        <label class="next" for="i6"><span>&#x203a;</span></label>
-
-                    </div>
-
-                    <div class="slide_img" id="six">
-                        <img src="./assets/images/slider/slider-img-2.jpg">
-
-
-                        <label class="next" for="i7"><span>&#x203a;</span></label>
-
-                    </div>
-
-                    <div class="slide_img" id="seven">
-                        <img src="./assets/images/slider/slider-img-3.jpg">
-
-
-                        <label class="next" for="i8"><span>&#x203a;</span></label>
-
-                    </div>
-
-                    <div class="slide_img" id="eight">
-                        <img src="./assets/images/slider/slider-img-4.jpg">
-
-                        <label class="next" for="i1"><span>&#x203a;</span></label>
-
-                    </div>
-
-                    <div id="nav_slide">
-                        <label for="i1" class="dots" id="dot1"></label>
-                        <label for="i2" class="dots" id="dot2"></label>
-                        <label for="i3" class="dots" id="dot3"></label>
-                        <label for="i4" class="dots" id="dot4"></label>
-                        <label for="i5" class="dots" id="dot5"></label>
-                        <label for="i6" class="dots" id="dot6"></label>
-                        <label for="i7" class="dots" id="dot7"></label>
-                        <label for="i8" class="dots" id="dot8"></label>
-                    </div>
-
+                    <div class="image-content swiper-slide">
+                
+                        <div class="card-image">
+                            <img src="./assets/images/slider/slider-img-2.jpg" alt="Prima Foto" class="card-img">
+                        </div>
+                    
                 </div>
-
-            </div>
+                <div class="image-content swiper-slide">
+                
+                    <div class="card-image">
+                        <img src="./assets/images/slider/slider-img-3.jpg" alt="Prima Foto" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="image-content swiper-slide">
+                
+                    <div class="card-image">
+                        <img src="./assets/images/slider/slider-img-4.jpg" alt="Prima Foto" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="image-content swiper-slide">
+                
+                    <div class="card-image">
+                        <img src="./assets/images/slider/slider-img-1.jpg" alt="Prima Foto" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="image-content swiper-slide">
+                
+                    <div class="card-image">
+                        <img src="./assets/images/slider/slider-img-2.jpg" alt="Prima Foto" class="card-img">
+                    </div>
+                
+                </div>
+                <div class="image-content swiper-slide">
+                    <div class="card-image">
+                        <img src="./assets/images/slider/slider-img-3.jpg" alt="Prima Foto" class="card-img">
+                    </div>
+                
+                </div>
+                
+                <div class="image-content swiper-slide">
+                    <div class="card-image">
+                        <img src="./assets/images/slider/slider-img-4.jpg" alt="Prima Foto" class="card-img">
+                    </div>
+                </div>
+                
+                
+                
+                </div>
+                
+                </div>
+                
+                
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                      <div class="swiper-button-prev swiper-navBtn"></div>
+                      <div class="swiper-pagination"></div>
+                
+                    </div>
+                </div>
+                    </div>
         </section>
 
 
@@ -569,6 +563,9 @@
 
     </main>
 
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
