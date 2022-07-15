@@ -78,14 +78,7 @@ p {
 
 }
 
-hr {
 
-    position: relative;
-    width: 120px;
-    margin: 0 auto;
-    z-index: 2;
-
-}
 
 .setting {
 
@@ -115,6 +108,25 @@ a:hover {
     cursor: pointer;
 
 }
+#contactus h2::before, #newsletter h2::before, #headermenu::before, #blog h2::before, #aboutus h1::before{
+
+    width: 140px;
+    height: 1px;
+    background: #dbdbdb;
+    position:absolute;
+    content: '';
+    bottom: 0;
+    left: 41%;
+    margin-right: -70px;
+   
+    
+ }
+ #contactus h2, #newsletter h2, #headermenu, #blog h2, #aboutus h1{
+    position: relative;
+}
+ #newsletter h2::before{
+    background-color: white;
+ }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -189,27 +201,25 @@ a:hover {
 /* HEADER NAVBAR */
 
 
-.bgheader{
+#imgheader{
+    max-width: 100%;
+    height: auto;
+  
+}
+#imgcontainer{
     position:relative;
-    background-image: url('../images/header.jpg');
-    background-size: cover;
-    z-index: -1;
-    width: 100vw;
-    height: 20vh;
-    background-position: center;
-    
 }
 
-
-.bgheader::before{
+#imgcontainer::before{
     content: '';
     position: absolute;
-    background: url('../images/overlay-pattern.png');
+    background: url('../images/overlay-pattern.png') black;
+    opacity: 0.3;
     top: 0;
     left: 0;
     background-repeat: repeat;
     width: 100vw;
-    height: auto;
+    height: 100%;
     
 }
 #topnav{
@@ -222,18 +232,22 @@ a:hover {
 #pos-sticky{
     position: sticky;
     background-color: white;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: 5;
     top: 0;
-    margin-top: -70px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 15px 10px 30px 10px;
+    margin-top: -75px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
+#logorestaurant{
+    position: absolute;
+    left: 10;
+    top:20;
+}
+
 #sottomenu{
     display: none;
-    width: 80vw;
+    width: 100%;
     position: absolute;
     background-color: white;
     top: 25; 
@@ -246,18 +260,18 @@ a:hover {
     font-size: 25px;
     position: absolute;
     right: 20;
-    top:-22;
+    top:-7;
     cursor: pointer;
 }
 #sottomenu li{
-    padding: 14px 16px;
+    padding: 15px 16px;
     font-size: 20px;
     display: block;
     text-align: left;
     text-transform: uppercase;
 
   }
-  #sottomenu li:hover{
+  #sottomenu li:hover:not(:first-of-type){
     border-bottom: 3px solid orangered;
   }
   .ics{
@@ -285,33 +299,13 @@ a:hover {
     display: block;
     width: 100%;
     height: 100%;
-  }
-
-  @media screen and (min-width:768px){
-        .ics, .bars{
-            display: none;
-        }
-        #sottomenu{
-            display: block;
-            top: -30;
-            right: -60;
-            background-color: transparent;
-            
-        }
-        
-        #sottomenu li{
-            display: inline-block;
-        }
-        #sottomenu li a {
-            font-size: 1rem;
-        }
-
-  }
-  @media screen and (min-width:1024px){
+    font-size: 0.9rem;
     
   }
 
-
+.target{
+    border-bottom: 3px solid orangered;
+}
 
 
 
@@ -392,6 +386,10 @@ a:hover {
 
 /*MENU*/
 
+#menu .setting{
+    position: relative;
+}
+
 #menu {
 
     padding-bottom: 150px;
@@ -431,8 +429,7 @@ padding: 1.2rem 0 0;
     padding: 25px 90px;
     margin-left: 20px;
     position: absolute;
-    right: 20;
-  
+    right: 0;
 }
 
 #menu-btn a {
@@ -502,7 +499,6 @@ padding: 1.2rem 0 0;
     height: 60px;
     font-weight: bold;
     font-family: ufonts;
-    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
     font-size: 1rem;
     letter-spacing: 2px;
   
@@ -510,23 +506,8 @@ padding: 1.2rem 0 0;
 
 /* CONTACT US */
 
-#contactus h2 {
 
-    position: relative;
 
-}
-
-#contactus h2::before {
-
-   width: 50%;
-   height: 0.8px;
-   background: #dbdbdb;
-   position:absolute;
-   content: '';
-   bottom: 0;
-   left: 25%;
-
-}
 
 #contactus input:focus, #contactus textarea:focus {
 
@@ -547,8 +528,7 @@ padding: 1.2rem 0 0;
 
 }
 
-#contactus input::placeholder, #contactus textarea::placeholder { /*questo non funziona da rivedere*/
-
+#contactus input::placeholder, #contactus textarea::placeholder { 
     font-family: ufonts;
     color: #afafaf;
 
@@ -671,8 +651,15 @@ address a {
 
 /* SLIDER */
 
+#slider{
+    padding-top: 50px;
+}
+#slider h3{
+    text-align: left;
+}
+
 #showmustgoon{
-    height: 50vh;
+    height: 25vh;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -681,7 +668,7 @@ address a {
 
 .card-image{
     position: relative;
-    height: 40vh;
+    height: 25vh;
     
 }
 .card-image .card-img{

@@ -16,16 +16,13 @@
 </head>
 
 <body>
-
-    <div class="bgheader">
-        
-    
-        
+    <div id="imgcontainer" class="underline">
+    <img id='imgheader' src="./assets/images/header.jpg" alt="Zuppa di Pomodoro">
     </div>
 
     <div id="pos-sticky" class="setting">
         
-        <a href="./index.html"><img src="./assets/images/logo.png" alt="Restaurant's Logo"></a>
+        <a href="./index.html"><img id="logorestaurant" src="./assets/images/logo.png" alt="Restaurant's Logo"></a>
         <nav id="topnav">
         <input id="toggle" type="checkbox">
           <label for="toggle" class="bars"><i class="fa fa-bars"></i></label>
@@ -35,19 +32,19 @@
                 
            
             <ul id="sottomenu">
-            
+                <li></li>
 
-                <li><a href="./index.html">Home</a></li>
+                <li class="imgcontainer"><a href="./index.html">Home</a></li>
 
-                <li><a href="#aboutus">About Us</a></li>
+                <li class="aboutus"><a href="#aboutus">About Us</a></li>
 
-                <li><a href="#blog">Blog</a></li>
+                <li class="blog"><a href="#blog">Blog</a></li>
 
-                <li><a href="#menu">Menu</a></li>
+                <li class="menu"><a href="#menu">Menu</a></li>
 
-                <li><a href="#newsletter">News</a></li>
+                <li class="newsletter"><a href="#newsletter">News</a></li>
 
-                <li><a href="#footer-flex">Contacts</a></li>
+                <li class="contactus"><a href="#contactus">Contacts</a></li>
 
             </ul>
             
@@ -143,8 +140,8 @@
         </section>
 
 
-        <section id="aboutus">
-            <div class="setting">
+        <section id="aboutus" class="underline">
+            <div class="setting" id="n2">
                 <div id="aboutus-flex">
 
                     <img src="./assets/images/cooker-img.png">
@@ -153,23 +150,18 @@
                             class="orange">Good</span>
                     </h1>
 
-                    <hr>
+                    
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, enim deleniti quibusdam sed
-                        rem
-                        repellendus magni laboriosam. Praesentium dolore cumque natus expedita quis veritatis! Atque
-                        nostrum
-                        mollitia qui dolorem architecto?
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit deserunt laborum omnis optio
-                        sapiente itaque ex amet ab blanditiis sit, eaque illo similique quisquam quidem, molestias aut
-                        maiores! Unde, voluptates.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                     </p>
 
                 </div>
             </div>
         </section>
 
-        <section class="bgsett" id="blog">
+        <section class="bgsett underline" id="blog">
 
             <div class="pattern">
                 <div class="setting">
@@ -178,7 +170,7 @@
 
                     <h2>Latest <span class="orange">From </span>the <span class="orange">Blog</span></h2>
 
-                    <hr>
+                    
 
                     <article id="blog-article">
 
@@ -294,23 +286,19 @@
 
         </section>
 
-        <section id="menu">
+        <section id="menu" class="underline">
 
             <div class="setting">
 
                 <div>
 
-                    <h2>our <span class="orange">MENU </span>the <span class="orange">PRICE</span></h2>
+                    <h2 id="headermenu">our <span class="orange">MENU </span>the <span class="orange">PRICE</span></h2>
 
-                    <hr>
+                    
 
                     <p>
 
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo nihil similique voluptas,
-                        aut
-                        obcaecati non vero delectus, adipisci officiis veniam et quia repudiandae, vel veritatis
-                        voluptatibus
-                        placeat quam atque tenetur.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 
                     </p>
 
@@ -326,9 +314,7 @@
                         <h2 class="dish">Pancakes n' Such</h2>
                         <div class="dish-border1">
                         <p class="price">$25.00</p></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus et aperiam ab, excepturi
-                            dignissimos neque ipsum magni voluptate error? Pariatur quasi reiciendis expedita molestiae
-                            similique quidem nesciunt, quo facilis?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
                         
                     </li>
 
@@ -336,10 +322,7 @@
                     <h2 class="dish">Homestyle Chicken Pot Pie</h2>
                     <div class="dish-border2">
                     <p class="price">$10.00</p></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum commodi maxime maiores aliquam
-                        eligendi facere in nostrum optio quis, provident est sequi unde saepe quae, consequuntur,
-                        debitis
-                        nam corporis tenetur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
                     </li>
 
                     <li class="dish-sett">
@@ -347,9 +330,7 @@
                         <h2 class="dish" >Cereal, Panecillo y Frutas</h2>
                         <div class="dish-border3">
                         <p class="price">$5.00</p></div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio laborum non vel ea sit
-                            optio, ipsa totam quibusdam aspernatur blanditiis eos iure aut rerum a, at natus dolores
-                            officiis recusandae?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
 
                     </li> 
 
@@ -358,10 +339,7 @@
                     <h2 class="dish" >Meat of Skewers</h2>
                     <div class="dish-border4">
                     <p class="price">$15.00</p></div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt officiis quaerat officia
-                        eligendi distinctio ratione, perspiciatis sequi debitis, dolor rerum a accusamus. Accusamus
-                        pariatur
-                        quae deserunt cumque repudiandae quisquam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
                      </li>
 
                     <li class="dish-sett">
@@ -369,9 +347,7 @@
                         <h2 class="dish">Steak with a Garlic and Parsley Risotto</h2>
                         <div class="dish-border5">
                         <p class="price">$75.00</p></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dolorum quos aliquam
-                            exercitationem debitis labore earum est velit rerum, eos eligendi! Iste veritatis tempore
-                            tempora quas esse sed voluptatem dolores.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
 
                     </li>
 
@@ -380,9 +356,7 @@
                         <h2 class="dish"> Caesar Salad </h2>
                         <div class="dish-border6">
                         <p class="price">$7.00</p></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tenetur impedit odio excepturi
-                            eveniet consectetur, laborum veritatis magni, minima, rerum qui. Quia, accusantium! Corporis
-                            architecto impedit optio dolores odio laboriosam?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
 
                     </li>
 
@@ -394,13 +368,13 @@
             </div>
         </section>
 
-        <section class='bgsett' id="newsletter">
+        <section class='bgsett underline' id="newsletter">
             <div class="pattern">
                 <div class="setting">
 
 
                     <h2>SUBSCRIBE <span class="orange">to our </span>NEWSLETTER</h2>
-                    <hr>
+                    
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     </p>
@@ -413,7 +387,7 @@
             </div>
         </section>
 
-        <section id="contactus">
+        <section id="contactus" class="underline">
             <div class="setting">
 
                 <h2>our <span class="orange">CONTACT US</span></h2>

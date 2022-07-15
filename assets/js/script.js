@@ -33,3 +33,28 @@ breakpoints: {
 
 
   });
+
+
+
+  let sections = document.querySelectorAll('.underline')
+
+  document.addEventListener('scroll',function(){
+      sections.forEach(function(s){
+
+          let elementTop = s.getBoundingClientRect().top
+          console.log(elementTop)
+         
+          
+
+          if(elementTop <= 250 && elementTop > -(s.clientHeight-250)){
+            console.log(s.clientHeight)
+            console.log('.'+s.id)
+              document.querySelector('.'+s.id).classList.add('target')
+          }else{
+              
+              document.querySelector('.'+s.id).classList.remove('target')
+          }
+          
+          
+      })
+  })
