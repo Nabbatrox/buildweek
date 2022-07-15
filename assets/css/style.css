@@ -162,7 +162,7 @@ a:hover{
 #pos-sticky{
     position: sticky;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: 5;
     top: 0;
     margin-top: -70px;
@@ -225,6 +225,30 @@ a:hover{
     display: block;
     width: 100%;
     height: 100%;
+  }
+
+  @media screen and (min-width:768px){
+        .ics, .bars{
+            display: none;
+        }
+        #sottomenu{
+            display: block;
+            top: -30;
+            right: -60;
+            background-color: transparent;
+            
+        }
+        
+        #sottomenu li{
+            display: inline-block;
+        }
+        #sottomenu li a {
+            font-size: 1rem;
+        }
+
+  }
+  @media screen and (min-width:1024px){
+    
   }
 
 
