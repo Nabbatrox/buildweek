@@ -381,6 +381,17 @@ padding: 1.2rem 0 0;
     right: 0;
 }
 
+#menu-btn:hover {
+
+    background-color: orangered;
+
+}
+#menu-btn:hover a {
+
+    color: white;
+
+}
+
 #menu-btn a {
 
     color:orangered;
