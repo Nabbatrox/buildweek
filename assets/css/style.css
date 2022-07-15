@@ -1,13 +1,19 @@
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* IMPOSTAZIONI GLOBALI */
-@font-face { font-family: ufonts; src: url(../fonts/ufonts.com_tw-cen-mt.ttf);}
+
+@font-face {
+
+    font-family: ufonts;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+
+}
 
 html {
 
     font-family: 'ufonts';
     text-align: center;
- 
+
 }
 
 .orange {
@@ -17,19 +23,22 @@ html {
 
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 
-    padding: 2.3rem 0;
+    padding: 2rem 0;
 
 }
 
 h1 {
-    
+
     font-size: 1.3rem;
 
 }
 
-h1 span, h2 span { 
+h1 span,
+h2 span {
 
     font-size: 2rem;
 
@@ -42,20 +51,28 @@ h2 {
 }
 
 h3 {
+
     font-size: 1.2rem;
     font-weight: bold;
 
 }
 
-h3 span {
+h3>.orange {
 
+    color: #fe5c40;
+
+}
+
+h4 {
+
+    font-weight: bold;
     color: #fe5c40;
 
 }
 
 p {
 
-    color: gray;
+    color: rgb(160, 160, 160);
     line-height: 1.8rem;
     padding: 2rem 0;
 
@@ -63,10 +80,12 @@ p {
 
 hr {
 
-    width: 50%;
+    position: relative;
+    width: 120px;
+    margin: 0 auto;
+    z-index: 2;
 
 }
-
 
 .setting {
 
@@ -76,18 +95,25 @@ hr {
 
 section {
 
-    padding: 50px 0;
+    padding: 70px 0;
 
 }
+
 .lefta {
+
     text-align: left;
+
 }
 
-.orange2{
+.orange2 {
+
     color: #fe5b4d;
+
 }
-a:hover{
+a:hover {
+
     cursor: pointer;
+
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -105,23 +131,57 @@ a:hover{
 
 #blog {
 
+    position: relative;
     background-image: url(/assets/images/blog/blog-bg.jpg);
 
 }
 
 #newsletter {
 
+    position: relative;
     background-image: url(/assets/images/subscribe-bg.jpg);
 
 }
 
-.pattern {
+#blog::before {
 
-    background-attachment: fixed;
-    background-image: url(/assets/images/overlay-pattern.png) black;
-    background-size: cover;
-    background-repeat: repeat;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+    background: url(../images/overlay-pattern.png) #000000;
+    opacity: 0.3;
+    z-index: 1;
+
+}
+
+#newsletter::before {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/overlay-pattern.png) #000000;
+    opacity: 0.3;
+    z-index: 1;
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*ABOUTUS*/
+
+#aboutus {
+
+    background-color: #f5f5f5;
 
 }
 
@@ -259,32 +319,205 @@ a:hover{
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
+/*BLOG*/
 
+.blog-flex {
 
+    background-color: white;
 
+}
 
+.blog-flex img {
+
+    width: 100%;
+
+}
+
+.blog-flex hr {
+
+    width: 30%;
+
+}
+
+#blog {
+
+    padding-bottom: 160px;
+
+}
+
+#blog h2 {
+
+    position: relative;
+    color: #f5f5f5;
+    z-index: 2;
+
+}
+
+#blog-article {
+
+    padding-top: 40px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
+
+}
+
+#blog-article p {
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#blog-btn {
+
+    color: #f5f5f5;
+    background-color: #fe5c40;
+    padding: 30px 80px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 50px;
+
+}
+
+#blog-btn a {
+
+    color: #f5f5f5;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*ABOUTUS*/
+/*MENU*/
+
+#menu {
+
+    padding-bottom: 150px;
+
+}
+
+#menu .setting h3 , #menu .setting ul {
+
+    text-align: left;
+
+}
+
+.dish {
+
+padding: 1.2rem 0 0;
+
+}
+
+.price {
+
+    padding: 0.5rem 0 0;
+
+}
+
+.price + p {
+
+    padding: 1rem 0 2rem;
+    line-height:1.5rem ;
+
+}
+
+#menu-btn {
+
+    background-color:white ;
+    border:1px solid orangered;
+    color:orangered;
+    padding: 25px 90px;
+    margin-left: 20px;
+    position: absolute;
+    right: 20;
+  
+}
+
+#menu-btn a {
+
+    text-decoration: none;
+    color:orangered;
+    font-weight: bold;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*NEWSLETTER*/
+
+#newsletter .pattern .setting h2 {
+
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+
+}
+
+#newsletter .pattern .setting p {
+
+    color: white;
+    font-size:1.2rem ;
+    position: relative;
+    z-index: 3;
+
+}
+
+#newsletter .pattern .setting form {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 4;
+
+}
+
+
+#newsletter .pattern .setting form input {
+
+    width: 100%;
+    height: 60px;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 0;
+    font-family: ufonts;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+    font-size: 0.9rem;
+    line-height: 2px;
+    font-weight: 500;
+    opacity: 0.9;
 
 
 
+}
 
+#newsletter .pattern .setting form button {
 
-
-
-
-
-
-
+    background-color:#69a8a1 ;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 60px;
+    font-weight: bold;
+    font-family: ufonts;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+    font-size: 1rem;
+    letter-spacing: 2px;
+  
+}
 
 /* CONTACT US */
 
-#contactus h2{
+#contactus h2 {
+
     position: relative;
+
 }
-#contactus h2::before{
+
+#contactus h2::before {
+
    width: 50%;
    height: 0.8px;
    background: #dbdbdb;
@@ -294,27 +527,42 @@ a:hover{
    left: 25%;
 
 }
-#contactus input:focus, #contactus textarea:focus{
+
+#contactus input:focus, #contactus textarea:focus {
+
     border-color: aqua;
     outline: none;
+
 }
 
-#contactus input, #contactus textarea, #contactus-btn{
+#contactus input, #contactus textarea, #contactus-btn {
     width: 100%;
     margin-bottom: 15px;
+
 }
-#contactus input, #contactus-btn{
+
+#contactus input, #contactus-btn {
+
     height: 50px;
+
 }
-#contactus input::placeholder, #contactus textarea::placeholder{
+
+#contactus input::placeholder, #contactus textarea::placeholder { /*questo non funziona da rivedere*/
+
     font-family: ufonts;
     color: #afafaf;
+
 }
-#contactus input, #contactus textarea{
+
+#contactus input, #contactus textarea {
+
     border: 1px solid #dbdbdb;
     padding: 10px 10px;
+
 }
-#contactus-btn{
+
+#contactus-btn {
+
     border: 0;
     background-color: #ff5004;
     color: white;
@@ -322,45 +570,39 @@ a:hover{
 
 }
 
-@media screen and (min-width:768px){
- 
-    #contactus-btn{
-        width: 70%;
-        margin-left: 15%;
-    
-    }
-
-    
-}
-
-
-
-
-
-
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* FOOTER */
 
-#footer-flex h4{
-        color: #fd540a;
-}
-#latestposts h4{
-    font-weight: bold;
+#footer-flex h4 {
+
+   color: #fd540a;
+
 }
 
-#photofooter img{
+#latestposts h4 {
+
+    font-weight: bold;
+
+}
+
+#photofooter img {
+
     margin-right: 20px;
     margin-bottom: 20px;
+
 }
 
+footer address i {
 
-footer address i{
     color: #636363;
+
 }
-footer h4, footer address i{
+footer h4, footer address i {
+
     margin-right: 30px;
     font-size: 1.2rem;
+
 }
 
 #followus .icona i {
@@ -369,7 +611,6 @@ footer h4, footer address i{
     font-size: 18px;
     line-height: 40px;
     
-
 }
 
 .icona {
@@ -384,66 +625,41 @@ footer h4, footer address i{
     
 }
 
-#cr{
+#cr {
+
     background-color: #e9e9e9;
+
 }
-#cr>p{
+
+#cr>p {
+
     margin: 0 20px;
     color: #4a524e;
     font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 2px;
     line-height: 1.5;
-}
-footer a{
-    text-decoration: none;
+
 }
 
-address a{
+footer a {
+
+    text-decoration: none;
+
+}
+
+address a {
+
     color: gray;
     display: inline-block;
     margin-top: 15px;
     margin-bottom: 30px;
+
 }
 
-#cr a{
+#cr a {
+
     color: #fd540a;
     font-size: 1rem;
+
 }
-
-@media screen and (min-width:768px){
-    address div{
-        display: inline-block;
-        font-size: 0.9rem;
-    }
-    #footer-flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-}
-@media screen and (min-width:1000px){
-    address div{
-        display: block;
-    }
-    #footer-flex{
-        flex-direction: row;
-    }
-}
-
-@media screen and (min-width:1200px){
-    #footer-flex{
-        justify-content: space-evenly;
-    }
-}
-
-
-
-
-
-
-
-
-
-

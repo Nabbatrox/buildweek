@@ -1,6 +1,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <script src="https://kit.fontawesome.com/7162ad06e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Restaurant's</title>
 
 </head>
 
 <body>
+
     <div class="bgheader">
         
     
@@ -54,9 +57,11 @@
         
         
 </div>
+    
+
 
     <main>
-
+        
         <section id="slider">
             <div class="setting">
                 <h3>FEATURED <span class="orange2">WORKS</span></h3>
@@ -154,7 +159,7 @@
 
         <section id="aboutus">
             <div class="setting">
-                <div>
+                <div id="aboutus-flex">
 
                     <img src="./assets/images/cooker-img.png">
 
@@ -169,6 +174,9 @@
                         repellendus magni laboriosam. Praesentium dolore cumque natus expedita quis veritatis! Atque
                         nostrum
                         mollitia qui dolorem architecto?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit deserunt laborum omnis optio
+                        sapiente itaque ex amet ab blanditiis sit, eaque illo similique quisquam quidem, molestias aut
+                        maiores! Unde, voluptates.
                     </p>
 
                 </div>
@@ -190,18 +198,21 @@
 
                         <figure class="blog-flex">
                             <img src="./assets/images/blog/blog-img-1.jpg">
+                            <div class='rombo'></div>
                             <figcaption class="fc">
-                                <h3>Homestyle Chicken Pot Style</h3>
+                                <h3>Homestyle Chicken Pot Pie</h3>
                                 <hr>
-                                <p>Prepared in true New England fashion. Tender all-white meat chicken simmered...</p>
+                                <p>Prepared in true New England fashion. Tender all-white meat chicken simmered...
+                                </p>
                             </figcaption>
                         </figure>
 
                         <figure class="blog-flex">
                             <img src="./assets/images/blog/blog-img-2.jpg">
+                            <div class='rombo'></div>
                             <figcaption class="fc">
 
-                                <h3>Homestyle Chicken Pot Style</h3>
+                                <h3>Homestyle Chicken Pot Pie</h3>
 
                                 <hr>
 
@@ -216,9 +227,11 @@
 
                         <figure class="blog-flex">
 
+
+
                             <figcaption class="fc">
 
-                                <h3>Homestyle Chicken Pot Style</h3>
+                                <h3>Homestyle Chicken Pot Pie</h3>
 
                                 <hr>
 
@@ -228,6 +241,7 @@
 
                                 </p>
                             </figcaption>
+                            <div class='rombo'></div>
                             <img src="./assets/images/blog/blog-img-3.jpg">
                         </figure>
 
@@ -235,7 +249,7 @@
 
                             <figcaption class="fc">
 
-                                <h3>Homestyle Chicken Pot Style</h3>
+                                <h3>Homestyle Chicken Pot Pie</h3>
 
                                 <hr>
 
@@ -246,14 +260,17 @@
                                 </p>
 
                             </figcaption>
+                            <div class='rombo'></div>
                             <img src="./assets/images/blog/blog-img-4.jpg">
                         </figure>
 
                         <figure class="blog-flex">
+
                             <img src="./assets/images/blog/blog-img-5.jpg">
+                            <div class='rombo'></div>
                             <figcaption class="fc">
 
-                                <h3>Homestyle Chicken Pot Style</h3>
+                                <h3>Homestyle Chicken Pot Pie</h3>
 
                                 <hr>
 
@@ -267,22 +284,25 @@
 
                         <figure class="blog-flex">
                             <img src="./assets/images/blog/blog-img-6.jpg">
+                            <div class='rombo'></div>
                             <figcaption class="fc">
-                                <h3>Homestyle Chicken Pot Style</h3>
+                                <h3>Homestyle Chicken Pot Pie</h3>
 
                                 <hr>
 
-                                <p>Prepared in true New England fashion. Tender all-white meat chicken simmered...</p>
+                                <p>Prepared in true New England fashion. Tender all-white meat chicken simmered...
+                                </p>
                             </figcaption>
                         </figure>
+                        <div id="blog-btn">
 
+                            <a href="#">MORE INFO</a>
+
+                        </div>
                     </article>
 
-                    <div>
 
-                        <a href="#">More Info</a>
 
-                    </div>
                 </div>
             </div>
 
@@ -315,54 +335,65 @@
 
                 <ul>
 
-                    <li>
-
-                        <h2>Pancakes n' Such</h2>
-                        <p class="price">$25.00</p>
+                    <li class="dish-sett" >
+                       
+                        <h2 class="dish">Pancakes n' Such</h2>
+                        <div class="dish-border1">
+                        <p class="price">$25.00</p></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus et aperiam ab, excepturi
                             dignissimos neque ipsum magni voluptate error? Pariatur quasi reiciendis expedita molestiae
                             similique quidem nesciunt, quo facilis?</p>
-
+                        
                     </li>
 
-                    <h2>Homestyle Chicken Pot Pie</h2>
-                    <p class="price">$10.00</p>
+                    <li class="dish-sett">
+                    <h2 class="dish">Homestyle Chicken Pot Pie</h2>
+                    <div class="dish-border2">
+                    <p class="price">$10.00</p></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum commodi maxime maiores aliquam
                         eligendi facere in nostrum optio quis, provident est sequi unde saepe quae, consequuntur,
                         debitis
                         nam corporis tenetur.</p>
+                    </li>
 
-                    <li>
+                    <li class="dish-sett">
 
-                        <h2>Cereal, Panecillo y Frutas</h2>
-                        <p class="price">$5.00</p>
+                        <h2 class="dish" >Cereal, Panecillo y Frutas</h2>
+                        <div class="dish-border3">
+                        <p class="price">$5.00</p></div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio laborum non vel ea sit
                             optio, ipsa totam quibusdam aspernatur blanditiis eos iure aut rerum a, at natus dolores
                             officiis recusandae?</p>
 
-                    </li>
+                    </li> 
 
-                    <h2>Meat of Skewers</h2>
-                    <p class="price">$15.00</p>
+                    <li class="dish-sett">
+
+                    <h2 class="dish" >Meat of Skewers</h2>
+                    <div class="dish-border4">
+                    <p class="price">$15.00</p></div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt officiis quaerat officia
                         eligendi distinctio ratione, perspiciatis sequi debitis, dolor rerum a accusamus. Accusamus
                         pariatur
                         quae deserunt cumque repudiandae quisquam.</p>
+                     </li>
 
-                    <li>
+                    <li class="dish-sett">
 
-                        <h2>Steak with a Garlic and Parsley Risotto</h2>
-                        <p class="price">$75.00</p>
+                        <h2 class="dish">Steak with a Garlic and Parsley Risotto</h2>
+                        <div class="dish-border5">
+                        <p class="price">$75.00</p></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dolorum quos aliquam
                             exercitationem debitis labore earum est velit rerum, eos eligendi! Iste veritatis tempore
                             tempora quas esse sed voluptatem dolores.</p>
 
                     </li>
 
-                    <li>
+                    <li class="dish-sett">
 
-                        <h2>Caesar Salad</h2>
-                        <p class="price">$7.00</p>
+                        <h2 class="dish"> Caesar Salad </h2>
+                        <div class="dish-border6">
+                        <p class="price">$7.00</p></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tenetur impedit odio excepturi
                             eveniet consectetur, laborum veritatis magni, minima, rerum qui. Quia, accusantium! Corporis
                             architecto impedit optio dolores odio laboriosam?</p>
@@ -371,8 +402,8 @@
 
                 </ul>
 
-                <div>
-                    <a href="#">More Info</a>
+                <div id="menu-btn">
+                    <a href="#" >MORE INFO</a>
                 </div>
             </div>
         </section>
@@ -385,13 +416,11 @@
                     <h2>SUBSCRIBE <span class="orange">to our </span>NEWSLETTER</h2>
                     <hr>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque autem voluptatum officia
-                        deserunt
-                        aperiam.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     </p>
 
                     <form action="">
-                        <input type="email" placeholder="Enter your email to subscribe...">
+                        <input type="email" placeholder="  Enter your email to subscribe...">
                         <button type="submit" class="btn-news">SUBSCRIBE</button>
                     </form>
                 </div>
@@ -419,8 +448,6 @@
         </section>
 
         <footer>
-
-            
 
             <section class="setting" id="footer-flex">
 
