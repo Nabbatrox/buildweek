@@ -518,7 +518,7 @@ padding: 1.2rem 0 0;
 
 #contactus input, #contactus textarea, #contactus-btn {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 
 }
 
@@ -718,6 +718,65 @@ address a {
         margin: 0 10px;
     }
 }
+
+/* #aboutus-flex img {
+
+    animation: fadeIn 1.5s ease-in;
+
+}
+
+#aboutus-flex h1 {
+
+    animation: fadeIn 1.2s ease-in;
+
+
+}
+
+#aboutus-flex p {
+
+    animation: fadeIn 1s ease-in;
+
+}
+
+
+@keyframes fadeIn {
+
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+
+}
+
+
+
+#blog img {
+
+    animation: hideShow 2s ease-in;
+
+
+
+}
+
+@keyframes hideShow {
+
+    0% {width: 0%;}
+    35% {width:0}
+    70% {width:0;}
+    100% {width:100%;}
+
+}
+
+#blog-btn {
+
+    animation: move 2s linear;
+
+}
+
+@keyframes move {
+
+    0% {left:300}
+    100% {left:0}
+
+} */
 
 
 

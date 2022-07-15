@@ -233,8 +233,22 @@
         margin-left: 15%;
         position: relative;
         right: 60;
+        font-family: ufonts;
 
     }
+
+    #contactus h2::before {
+
+        width: 15%;
+        height: 0.8px;
+        background: #dbdbdb;
+        position:absolute;
+        content: '';
+        bottom: 0;
+        left: 43%;
+
+     
+     }
 
     /* FOOTER */
 
@@ -249,8 +263,13 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
 
+    }
+
+    #footer-flex p {
+
+        padding: 10px 0 20px 0;
     }
 
 
@@ -372,6 +391,15 @@
 
     }
 
+    /* CONTACT US */
+
+    #contactus-btn {
+
+        width: 42%;
+        left: 220;
+
+    }
+
 }
 
 /*//////////////////RESPONSIVE 1200PX //////////////////////////////////*/
@@ -436,6 +464,15 @@
 
         width: 88%;
 
+    }
+
+    /* CONTACT US */
+
+    #contactus-btn {
+
+        width: 42%;
+        left: 257;
+    
     }
 
     /*///////////////////////////////////////// FOOTER ///////////////////////////////////////*/
