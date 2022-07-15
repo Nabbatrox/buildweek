@@ -275,10 +275,14 @@ a{
 
 }
 
-.blog-flex hr {
+.blog-flex hr, #blog-article {
+
+    z-index: 3;
+
+}
+.blog-flex hr{
 
     width: 30%;
-    z-index: 3;
 
 }
 
@@ -291,20 +295,18 @@ a{
     z-index: 2;
 }
 
-#blog h2 {
+#blog h2, #blog-btn, #blog-btn a {
 
-    position: relative;
     color: #f5f5f5;
+}
 
+#blog-article, #blog h2{
+    position: relative;
 }
 
 #blog-article {
-
     padding-top: 40px;
     padding-bottom: 50px;
-    position: relative;
-    z-index: 3;
-
 }
 
 #blog-article p {
@@ -315,8 +317,6 @@ a{
 }
 
 #blog-btn {
-
-    color: #f5f5f5;
     background-color: #fe5c40;
     padding: 30px 80px;
     position: absolute;
@@ -326,7 +326,6 @@ a{
 
 #blog-btn a {
 
-    color: #f5f5f5;
     font-size: 1rem;
 
 }
@@ -372,16 +371,15 @@ padding: 1.2rem 0 0;
 
 #menu-btn {
 
-    background-color:white ;
+    background-color:white;
     border:1px solid orangered;
-    color:orangered;
     padding: 25px 90px;
     margin-left: 20px;
     position: absolute;
     right: 0;
 }
 
-#menu-btn:hover {
+#menu-btn:hover, #menu-btn, #menu-btn a {
 
     background-color: orangered;
 
@@ -394,7 +392,6 @@ padding: 1.2rem 0 0;
 
 #menu-btn a {
 
-    color:orangered;
     font-weight: bold;
 }
 
@@ -402,20 +399,24 @@ padding: 1.2rem 0 0;
 
 /*NEWSLETTER*/
 
+#newsletter .pattern .setting h2, #newsletter .pattern .setting p, #newsletter .pattern .setting form button{
+    color: white;
+}
+#newsletter .pattern .setting h2, #newsletter .pattern .setting p, #newsletter .pattern .setting form{
+    position: relative;
+} 
+
+
 #newsletter .pattern .setting h2 {
 
-    color: white;
     font-size: 2rem;
-    position: relative;
     z-index: 2;
 
 }
 
 #newsletter .pattern .setting p {
 
-    color: white;
     font-size:1.2rem ;
-    position: relative;
     z-index: 3;
 
 }
@@ -425,7 +426,6 @@ padding: 1.2rem 0 0;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 80px;
-    position: relative;
     z-index: 4;
 
 }
@@ -435,29 +435,26 @@ padding: 1.2rem 0 0;
 
     width: 100%;
     height: 60px;
-    border: none;
     margin-bottom: 20px;
     margin-left: 0;
-    font-family: ufonts;
-    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
     font-size: 0.9rem;
     line-height: 2px;
-    font-weight: 500;
     opacity: 0.9;
 
 
 
 }
+#newsletter .pattern .setting form button, #newsletter .pattern .setting form input{
+    border: none;
+    font-family: ufonts;
+}
 
 #newsletter .pattern .setting form button {
 
-    background-color:#69a8a1 ;
-    color: white;
-    border: none;
+    background-color:#69a8a1;
     width: 200px;
     height: 60px;
     font-weight: bold;
-    font-family: ufonts;
     font-size: 1rem;
     letter-spacing: 2px;
   
@@ -699,23 +696,6 @@ address a {
 
 }
 
-
-
-/* #blog img {
-
-    animation: hideShow 1s ease-in;
-    animation-iteration-count: 1;
-
-
-
-}
-
-@keyframes hideShow {
-
-    0% {width: 0;}
-    100% {width:100%;}
-
-} */
 
 #blog-btn {
 
