@@ -103,10 +103,13 @@ section {
     color: #fe5b4d;
 
 }
-a:hover {
+a:hover, .bars, .ics {
 
     cursor: pointer;
 
+}
+a{
+    text-decoration: none;
 }
 #contactus h2::before, #newsletter h2::before, #headermenu::before, #blog h2::before, #aboutus h1::before{
 
@@ -141,21 +144,14 @@ a:hover {
 
 }
 
-#blog {
+#blog, #newsletter {
 
     position: relative;
     background-image: url(/assets/images/blog/blog-bg.jpg);
 
 }
 
-#newsletter {
-
-    position: relative;
-    background-image: url(/assets/images/subscribe-bg.jpg);
-
-}
-
-#blog::before {
+#blog::before, #newsletter::before, #imgcontainer::before {
 
     content: "";
     position: absolute;
@@ -171,21 +167,6 @@ a:hover {
 
 }
 
-#newsletter::before {
-
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../images/overlay-pattern.png) #000000;
-    opacity: 0.3;
-    z-index: 1;
-
-}
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -206,28 +187,14 @@ a:hover {
     height: auto;
   
 }
-#imgcontainer{
+#imgcontainer, #topnav{
     position:relative;
 }
 
-#imgcontainer::before{
-    content: '';
-    position: absolute;
-    background: url('../images/overlay-pattern.png') black;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    background-repeat: repeat;
-    width: 100vw;
-    height: 100%;
-    
-}
-#topnav{
-    position: relative;
-    width: 100%;
-    
 
-}
+#topnav, #sottomenu, #sottomenu a{
+    width: 100%;
+    }
 
 #pos-sticky{
     position: sticky;
@@ -240,15 +207,14 @@ a:hover {
     padding-bottom: 50px;
 }
 #logorestaurant{
-    position: absolute;
     left: 10;
     top:20;
 }
 
+#logorestaurant, #sottomenu, .bars, .ics{
+    position:absolute;
+}
 #sottomenu{
-    display: none;
-    width: 100%;
-    position: absolute;
     background-color: white;
     top: 25; 
 }
@@ -258,15 +224,12 @@ a:hover {
 .bars, .ics{
     color: #ff5f16;
     font-size: 25px;
-    position: absolute;
     right: 20;
     top:-7;
-    cursor: pointer;
 }
 #sottomenu li{
     padding: 15px 16px;
     font-size: 20px;
-    display: block;
     text-align: left;
     text-transform: uppercase;
 
@@ -274,30 +237,17 @@ a:hover {
   #sottomenu li:hover:not(:first-of-type){
     border-bottom: 3px solid orangered;
   }
-  .ics{
+  .ics,  #toggle, #toggle:checked~.bars, #sottomenu{
     display: none;
   }
-  #toggle{
-    display: none;
-  }
-  #toggle:checked~#sottomenu {
+
+  #toggle:checked~#sottomenu, #toggle:checked~.ics, #sottomenu li, #sottomenu a{
     display: block;
     
 }
-
-#toggle:checked~.ics {
-    display: block;
-}
-
-#toggle:checked~.bars {
-    display: none;
-}
   
   #sottomenu a{
-    text-decoration: none;
     color: black;
-    display: block;
-    width: 100%;
     height: 100%;
     font-size: 0.9rem;
     
@@ -338,12 +288,14 @@ a:hover {
     padding-bottom: 160px;
 
 }
+#blog h2, #blog-article, #blog-btn{
+    z-index: 2;
+}
 
 #blog h2 {
 
     position: relative;
     color: #f5f5f5;
-    z-index: 2;
 
 }
 
@@ -352,8 +304,6 @@ a:hover {
     padding-top: 40px;
     padding-bottom: 50px;
     position: relative;
-    z-index: 2;
-
 }
 
 #blog-article p {
@@ -369,16 +319,13 @@ a:hover {
     background-color: #fe5c40;
     padding: 30px 80px;
     position: absolute;
-    z-index: 2;
     margin-top: 50px;
-
 }
 
 #blog-btn a {
 
     color: #f5f5f5;
     font-size: 1rem;
-    text-decoration: none;
 
 }
 
@@ -434,7 +381,6 @@ padding: 1.2rem 0 0;
 
 #menu-btn a {
 
-    text-decoration: none;
     color:orangered;
     font-weight: bold;
 }
@@ -619,12 +565,6 @@ footer h4, footer address i {
     font-weight: bold;
     letter-spacing: 2px;
     line-height: 1.5;
-
-}
-
-footer a {
-
-    text-decoration: none;
 
 }
 
