@@ -16,7 +16,7 @@ html {
 
 }
 
-.orange {
+.orange, #footer-flex .orange{
 
     color: orangered;
     font-weight: bold;
