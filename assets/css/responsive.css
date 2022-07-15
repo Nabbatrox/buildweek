@@ -1,0 +1,486 @@
+/*GLOBAL @MEDIA*/
+
+@media screen and (min-width: 768px) {
+
+    .setting {
+
+        max-width: 768px;
+        margin: 0 auto;
+
+    }
+
+    section {
+
+        padding: 100px 0;
+
+    }
+
+    h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+    h1 span,
+    h2 span {
+
+        font-size: 2.8rem;
+
+    }
+
+    h2 {
+
+        font-size: 2.2rem;
+
+    }
+
+    .dish {
+
+        font-size: 1.6rem;
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .setting {
+
+        max-width: 1024px;
+        margin: 0 auto;
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .setting {
+
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+}
+
+/*/////////////////////RESPONSIVE 768PX//////////////////////////*/
+
+@media screen and (min-width:768px) {
+
+    /*////////////////////NAVBAR//////////////////////*/
+    .ics, .bars{
+        display: none;
+    }
+    #sottomenu{
+        display: block;
+        top: -13;
+        right: 10;
+        background-color: transparent;
+        width: 500px;
+        
+    }
+    #logorestaurant{
+        left: 25;
+        top: 25;
+    }
+    #sottomenu li:first-child{
+        display: none;
+    }
+    
+    #sottomenu li{
+        display: inline-block;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    #sottomenu li a {
+        font-size: 1rem;
+    }
+
+    /*///////////////////// MENU /////////////////////*/
+
+    .dish-sett {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .dish-border1 {
+
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 78%;
+
+    }
+
+    .dish-border2 {
+
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 65%;
+
+    }
+
+    .dish-border3 {
+
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 65%;
+
+    }
+
+    .dish-border4 {
+
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 77%;
+
+    }
+
+    .dish-border5 {
+
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 48%;
+
+    }
+
+    .dish-border6 {
+
+        border-bottom: 1px dotted black;
+        bottom: 5;
+        width: 81%;
+
+    }
+
+    .price {
+
+        text-align: right;
+
+    }
+
+    /*/////////////////// NEWSLETTER ///////////////////////////////*/
+
+    #newsletter .pattern .setting form input {
+
+        width: 450px;
+
+    }
+
+    .setting form {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    /*///////////////////// BLOG //////////////////////////////////*/
+
+    .blog-flex {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+
+    }
+
+    .imganimation,
+    .fc {
+
+        flex-basis: 50%;
+
+    }
+
+    .rombo {
+
+        background-color: white;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        left: 48%;
+        top: 60px;
+        transform: rotate(45deg);
+
+    }
+
+    #blog-btn {
+
+        padding: 35px 100px;
+        right: 34%;
+        margin-top: 30px;
+
+    }
+
+    /* ABOUTUS */
+
+    #aboutus-flex {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    /* CONTACTUS */
+
+    #contactus-btn {
+
+        width: 70%;
+        margin-left: 15%;
+        position: relative;
+        right: 60;
+        font-family: ufonts;
+
+    }
+
+    #contactus h2::before {
+
+        width: 15%;
+        height: 0.8px;
+        background: #dbdbdb;
+        position:absolute;
+        content: '';
+        bottom: 0;
+        left: 43%;
+
+     
+     }
+
+    /* FOOTER */
+
+    address div {
+
+        display: inline-block;
+        font-size: 0.9rem;
+
+    }
+
+    #footer-flex {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    #footer-flex p {
+
+        padding: 10px 0 20px 0;
+    }
+
+
+
+
+}
+
+/*//////////////////RESPONSIVE 1000PX //////////////////////////////////*/
+
+@media screen and (min-width:1000px) {
+
+    address div {
+
+        display: block;
+
+    }
+
+    #footer-flex {
+
+        flex-direction: row;
+
+    }
+
+}
+
+/*//////////////////RESPONSIVE 1024PX //////////////////////////////////*/
+
+@media screen and (min-width: 1024px) {
+
+    /*///////////////////////////NAVBAR////////////////////////////*/
+
+     #sottomenu{
+        right: 40;
+    }
+    #logorestaurant{
+        left: 40;
+        top: 28;
+    }
+
+    /*////////////////////////////// BLOG /////////////////////////////////*/
+
+    #blog-article {
+
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+
+    }
+
+    .blog-flex {
+
+        align-items: flex-start;
+
+    }
+
+    #blog-article h3 {
+
+        padding-top: 50px;
+
+    }
+
+
+    .imganimation {
+
+        width: 50%;
+
+    }
+
+    #blog-btn {
+
+        bottom: -36;
+        right: 0;
+
+    }
+
+    .rombo {
+
+        left: 47%;
+        top: 120px;
+        transform: rotate(45deg);
+
+    }
+
+    /*///////////////////// MENU /////////////////////*/
+
+    .dish-border1 {
+
+        width: 83%;
+
+    }
+
+    .dish-border2 {
+
+        width: 74%;
+
+    }
+
+    .dish-border3 {
+
+        width: 74%;
+
+    }
+
+    .dish-border4 {
+
+        width: 83%;
+
+    }
+
+    .dish-border5 {
+
+        width: 61%;
+
+    }
+
+    .dish-border6 {
+
+        width: 86%;
+
+    }
+
+    /* CONTACT US */
+
+    #contactus-btn {
+
+        width: 42%;
+        left: 220;
+
+    }
+
+}
+
+/*//////////////////RESPONSIVE 1200PX //////////////////////////////////*/
+
+@media screen and (min-width: 1200px) {
+
+    /*/////////////////////////////// BLOG //////////////////////////////////////*/
+
+    .rombo {
+
+        left: 47.5%;
+        top: 120px;
+        transform: rotate(45deg);
+
+    }
+
+    .blog-flex figcaption h3 {
+
+        padding-bottom: 50px
+
+    }
+
+    .blog-flex img {
+
+        height: 100%;
+
+    }
+
+    /*///////////////////// MENU /////////////////////*/
+
+    .dish-border1 {
+
+        width: 85%;
+
+    }
+
+    .dish-border2 {
+
+        width: 77%;
+
+    }
+
+    .dish-border3 {
+
+        width: 78%;
+
+    }
+
+    .dish-border4 {
+
+        width: 85%;
+
+    }
+
+    .dish-border5 {
+
+        width: 66%;
+
+    }
+
+    .dish-border6 {
+
+        width: 88%;
+
+    }
+
+    /* CONTACT US */
+
+    #contactus-btn {
+
+        width: 42%;
+        left: 257;
+    
+    }
+
+    /*///////////////////////////////////////// FOOTER ///////////////////////////////////////*/
+
+    #footer-flex {
+
+        justify-content: space-evenly;
+
+    }
+
+}

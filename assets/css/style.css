@@ -1,0 +1,755 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* IMPOSTAZIONI GLOBALI */
+
+@font-face {
+
+    font-family: ufonts;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+
+}
+
+html {
+
+    font-family: 'ufonts';
+    text-align: center;
+
+}
+
+.orange, #footer-flex .orange{
+
+    color: orangered;
+    font-weight: bold;
+
+}
+
+h1,
+h2,
+h3 {
+
+    padding: 2rem 0;
+
+}
+
+h1 {
+
+    font-size: 1.3rem;
+
+}
+
+h1 span,
+h2 span {
+
+    font-size: 2rem;
+
+}
+
+h2 {
+
+    font-size: 1.6rem;
+
+}
+
+h3 {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+h3>.orange {
+
+    color: #fe5c40;
+
+}
+
+h4 {
+
+    font-weight: bold;
+    color: #fe5c40;
+
+}
+
+p {
+
+    color: rgb(160, 160, 160);
+    line-height: 1.8rem;
+    padding: 2rem 0;
+
+}
+
+
+
+.setting {
+
+    margin: 0 20px;
+
+}
+
+section {
+
+    padding: 70px 0;
+
+}
+
+.lefta {
+
+    text-align: left;
+
+}
+
+.orange2 {
+
+    color: #fe5b4d;
+
+}
+a:hover, .bars, .ics {
+
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+}
+#contactus h2::before, #newsletter h2::before, #headermenu::before, #blog h2::before, #aboutus h1::before{
+
+    width: 140px;
+    height: 1px;
+    background: #dbdbdb;
+    position:absolute;
+    content: '';
+    bottom: 0;
+    left: 41%;
+    margin-right: -70px;
+   
+    
+ }
+ #contactus h2, #newsletter h2, #headermenu, #blog h2, #aboutus h1{
+    position: relative;
+}
+ #newsletter h2::before{
+    background-color: white;
+ }
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* background imgs */
+
+.bgsett {
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+#blog, #newsletter {
+
+    position: relative;
+    background-image: url(/assets/images/blog/blog-bg.jpg);
+
+}
+
+#blog::before, #newsletter::before, #imgcontainer::before {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/overlay-pattern.png) #000000;
+    opacity: 0.3;
+    z-index: 1;
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*ABOUTUS*/
+
+#aboutus {
+
+    background-color: #f5f5f5;
+
+}
+
+/*///////////////////////////////////////////////////////////////*/
+/* HEADER NAVBAR */
+
+
+#imgheader{
+    max-width: 100%;
+    height: auto;
+  
+}
+#imgcontainer, #topnav{
+    position:relative;
+}
+
+#topnav, #sottomenu, #sottomenu a{
+    width: 100%;
+    }
+
+#pos-sticky{
+    position: sticky;
+    background-color: white;
+    opacity: 0.8;
+    z-index: 5;
+    top: 0;
+    margin-top: -75px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#logorestaurant{
+    left: 10;
+    top:20;
+}
+
+#logorestaurant, #sottomenu, .bars, .ics{
+    position:absolute;
+}
+#sottomenu{
+    background-color: white;
+    top: 25; 
+}
+#pos-sticky>img{
+        height: 25px;
+}
+.bars, .ics{
+    color: #ff5f16;
+    font-size: 25px;
+    right: 20;
+    top:-7;
+}
+#sottomenu li{
+    padding: 15px 16px;
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+
+  }
+  #sottomenu li:hover:not(:first-of-type){
+    border-bottom: 3px solid orangered;
+  }
+  .ics,  #toggle, #toggle:checked~.bars, #sottomenu{
+    display: none;
+  }
+
+  #toggle:checked~#sottomenu, #toggle:checked~.ics, #sottomenu li, #sottomenu a{
+    display: block;
+    
+}
+  
+  #sottomenu a{
+    color: black;
+    height: 100%;
+    font-size: 0.9rem;
+    
+  }
+
+.target{
+    border-bottom: 3px solid orangered;
+}
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*BLOG*/
+
+.blog-flex {
+
+    background-color: white;
+
+}
+
+.blog-flex img {
+
+    width: 100%;
+
+}
+
+.blog-flex hr {
+
+    width: 30%;
+    z-index: 3;
+
+}
+
+#blog {
+
+    padding-bottom: 160px;
+
+}
+#blog h2, #blog-article, #blog-btn{
+    z-index: 2;
+}
+
+#blog h2 {
+
+    position: relative;
+    color: #f5f5f5;
+
+}
+
+#blog-article {
+
+    padding-top: 40px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 3;
+
+}
+
+#blog-article p {
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#blog-btn {
+
+    color: #f5f5f5;
+    background-color: #fe5c40;
+    padding: 30px 80px;
+    position: absolute;
+    z-index: 4;
+    margin-top: 50px;
+}
+
+#blog-btn a {
+
+    color: #f5f5f5;
+    font-size: 1rem;
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*MENU*/
+
+#menu .setting{
+    position: relative;
+}
+
+#menu {
+
+    padding-bottom: 150px;
+
+}
+
+#menu .setting h3 , #menu .setting ul {
+
+    text-align: left;
+
+}
+
+.dish {
+
+padding: 1.2rem 0 0;
+
+}
+
+.price {
+
+    padding: 0.5rem 0 0;
+
+}
+
+.price + p {
+
+    padding: 1rem 0 2rem;
+    line-height:1.5rem ;
+
+}
+
+#menu-btn {
+
+    background-color:white ;
+    border:1px solid orangered;
+    color:orangered;
+    padding: 25px 90px;
+    margin-left: 20px;
+    position: absolute;
+    right: 0;
+}
+
+#menu-btn:hover {
+
+    background-color: orangered;
+
+}
+#menu-btn:hover a {
+
+    color: white;
+
+}
+
+#menu-btn a {
+
+    color:orangered;
+    font-weight: bold;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*NEWSLETTER*/
+
+#newsletter .pattern .setting h2 {
+
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+
+}
+
+#newsletter .pattern .setting p {
+
+    color: white;
+    font-size:1.2rem ;
+    position: relative;
+    z-index: 3;
+
+}
+
+#newsletter .pattern .setting form {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 4;
+
+}
+
+
+#newsletter .pattern .setting form input {
+
+    width: 100%;
+    height: 60px;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 0;
+    font-family: ufonts;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+    font-size: 0.9rem;
+    line-height: 2px;
+    font-weight: 500;
+    opacity: 0.9;
+
+
+
+}
+
+#newsletter .pattern .setting form button {
+
+    background-color:#69a8a1 ;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 60px;
+    font-weight: bold;
+    font-family: ufonts;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  
+}
+
+/* CONTACT US */
+
+
+
+
+#contactus input:focus, #contactus textarea:focus {
+
+    border-color: aqua;
+    outline: none;
+
+}
+
+#contactus input, #contactus textarea, #contactus-btn {
+    width: 100%;
+    margin-bottom: 35px;
+
+}
+
+#contactus input, #contactus-btn {
+
+    height: 50px;
+
+}
+
+#contactus input::placeholder, #contactus textarea::placeholder { 
+    font-family: ufonts;
+    color: #afafaf;
+
+}
+
+#contactus input, #contactus textarea {
+
+    border: 1px solid #dbdbdb;
+    padding: 10px 10px;
+
+}
+
+#contactus-btn {
+
+    border: 0;
+    background-color: #ff5004;
+    color: white;
+    font-weight: bold;
+
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* FOOTER */
+
+#footer-flex h4 {
+
+   color: #fd540a;
+
+}
+
+#latestposts h4 {
+
+    font-weight: bold;
+
+}
+
+#photofooter img {
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+footer address i {
+
+    color: #636363;
+
+}
+footer h4, footer address i {
+
+    margin-right: 30px;
+    font-size: 1.2rem;
+
+}
+
+#followus .icona i {
+
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    
+}
+
+.icona {
+
+    background-color: #b0b0b0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    
+}
+
+#cr {
+
+    background-color: #e9e9e9;
+
+}
+
+#cr>p {
+
+    margin: 0 20px;
+    color: #4a524e;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+}
+
+address a {
+
+    color: gray;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+}
+
+#cr a {
+
+    color: #fd540a;
+    font-size: 1rem;
+
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* SLIDER */
+
+#slider{
+    padding-top: 50px;
+}
+#slider h3{
+    text-align: left;
+}
+
+#showmustgoon{
+    height: 25vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.card-image{
+    position: relative;
+    height: 25vh;
+    
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.slide-content{
+    margin: 0 40px;
+    padding: 45px 20px;
+    overflow: hidden;
+}
+.slide-container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+}
+
+.swiper-navBtn{
+    color: orangered;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: orange;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: grey;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: orangered;
+}
+
+@media screen and (max-width:768px){
+    .slide-content{
+        margin: 0 10px;
+    }
+}
+
+#aboutus-flex img {
+
+    animation: fadeIn 1.9s ease-in;
+
+}
+
+#aboutus-flex h1 {
+
+    animation: fadeIn 1.6s ease-in;
+
+
+}
+
+#aboutus-flex p {
+
+    animation: fadeIn 1s ease-in;
+
+}
+
+
+@keyframes fadeIn {
+
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+
+}
+
+
+
+/* #blog img {
+
+    animation: hideShow 1s ease-in;
+    animation-iteration-count: 1;
+
+
+
+}
+
+@keyframes hideShow {
+
+    0% {width: 0;}
+    100% {width:100%;}
+
+} */
+
+#blog-btn {
+
+    animation: move 2s linear;
+
+}
+
+@keyframes move {
+
+    0% {left:300}
+    100% {left:0}
+
+}
+
+.deg45:hover {
+
+    animation: rotation 2s ease-in;
+
+}
+
+@keyframes rotation {
+
+
+    0% {transform: scale(1.1) rotate(0);}
+    50% {transform: scale(1.6) rotate(45deg);} 
+    100% {transform: scale(1.6) rotate(45deg);}
+
+}
+
+.imganimation {
+
+
+    width: 100%;
+    overflow: hidden;
+
+
+}
