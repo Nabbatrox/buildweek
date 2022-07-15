@@ -369,17 +369,22 @@ padding: 1.2rem 0 0;
 
 }
 
+
+
+
+
 #menu-btn {
 
-    background-color:white;
+    background-color:white ;
     border:1px solid orangered;
+    color:orangered;
     padding: 25px 90px;
     margin-left: 20px;
     position: absolute;
     right: 0;
 }
 
-#menu-btn:hover, #menu-btn, #menu-btn a {
+#menu-btn:hover {
 
     background-color: orangered;
 
@@ -392,6 +397,7 @@ padding: 1.2rem 0 0;
 
 #menu-btn a {
 
+    color:orangered;
     font-weight: bold;
 }
 
