@@ -188,7 +188,7 @@
 
     }
 
-    figure img,
+    .imganimation,
     .fc {
 
         flex-basis: 50%;
@@ -332,7 +332,7 @@
     }
 
 
-    .blog-flex img {
+    .imganimation {
 
         width: 50%;
 

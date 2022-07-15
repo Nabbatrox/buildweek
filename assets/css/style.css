@@ -330,6 +330,7 @@ a:hover {
 .blog-flex hr {
 
     width: 30%;
+    z-index: 3;
 
 }
 
@@ -352,7 +353,7 @@ a:hover {
     padding-top: 40px;
     padding-bottom: 50px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 
 }
 
@@ -369,7 +370,7 @@ a:hover {
     background-color: #fe5c40;
     padding: 30px 80px;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     margin-top: 50px;
 
 }
@@ -719,15 +720,15 @@ address a {
     }
 }
 
-/* #aboutus-flex img {
+#aboutus-flex img {
 
-    animation: fadeIn 1.5s ease-in;
+    animation: fadeIn 1.9s ease-in;
 
 }
 
 #aboutus-flex h1 {
 
-    animation: fadeIn 1.2s ease-in;
+    animation: fadeIn 1.6s ease-in;
 
 
 }
@@ -748,9 +749,10 @@ address a {
 
 
 
-#blog img {
+/* #blog img {
 
-    animation: hideShow 2s ease-in;
+    animation: hideShow 1s ease-in;
+    animation-iteration-count: 1;
 
 
 
@@ -758,12 +760,10 @@ address a {
 
 @keyframes hideShow {
 
-    0% {width: 0%;}
-    35% {width:0}
-    70% {width:0;}
+    0% {width: 0;}
     100% {width:100%;}
 
-}
+} */
 
 #blog-btn {
 
@@ -776,7 +776,34 @@ address a {
     0% {left:300}
     100% {left:0}
 
-} */
+}
+
+.deg45:hover {
+
+    animation: rotation 2s ease-in;
+
+}
+
+@keyframes rotation {
+
+
+    0% {transform: scale(1.1) rotate(0);}
+    50% {transform: scale(1.6) rotate(45deg);} 
+    100% {transform: scale(1.6) rotate(45deg);}
+
+}
+
+.imganimation {
+
+
+    width: 100%;
+    overflow: hidden;
+
+
+}
+
+
+
 
 
 
