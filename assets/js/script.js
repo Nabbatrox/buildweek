@@ -58,3 +58,29 @@ breakpoints: {
           
       })
   })
+
+
+
+
+  /* ANIMATIONS */
+document.addEventListener('scroll',function(){
+
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = document.body.clientHeight;
+      console.log(windowHeight)
+      var elementTop = reveals[i].getBoundingClientRect().top;
+  
+      if(elementTop <= 500){
+        reveals[i].classList.add("active");
+    } else{
+        reveals[i].classList.remove("active");
+       
+    }
+
+    }
+
+
+  
+})
