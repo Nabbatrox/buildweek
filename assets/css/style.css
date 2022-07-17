@@ -221,6 +221,7 @@ a{
     background-color: white;
     top: 25; 
 }
+
 #pos-sticky>img{
         height: 25px;
 }
@@ -296,11 +297,11 @@ a{
     padding-bottom: 160px;
 
 }
-#blog h2, #blog-article, #blog-btn{
+#blog h2, #blog-article{
     z-index: 2;
 }
 
-#blog h2, #blog-btn, #blog-btn a {
+#blog h2, #blog-btn a {
 
     color: #f5f5f5;
 }
@@ -376,15 +377,16 @@ padding: 1.2rem 0 0;
 
 #menu-btn {
 
-    background-color:white;
+    background-color:white ;
     border:1px solid orangered;
+    color:orangered;
     padding: 25px 90px;
     margin-left: 20px;
     position: absolute;
     right: 0;
 }
 
-#menu-btn:hover, #menu-btn, #menu-btn a {
+#menu-btn:hover {
 
     background-color: orangered;
 
@@ -397,6 +399,7 @@ padding: 1.2rem 0 0;
 
 #menu-btn a {
 
+    color:orangered;
     font-weight: bold;
 }
 
@@ -410,6 +413,7 @@ padding: 1.2rem 0 0;
 #newsletter .pattern .setting h2, #newsletter .pattern .setting p, #newsletter .pattern .setting form{
     position: relative;
 } 
+
 
 
 #newsletter .pattern .setting h2 {
@@ -445,17 +449,15 @@ padding: 1.2rem 0 0;
     font-size: 0.9rem;
     line-height: 2px;
     opacity: 0.9;
-
-
-
 }
+
 #newsletter .pattern .setting form button, #newsletter .pattern .setting form input{
     border: none;
     font-family: ufonts;
 }
 
-#newsletter .pattern .setting form button {
-
+.btn-news {
+    cursor: pointer;
     background-color:#69a8a1;
     width: 200px;
     height: 60px;
@@ -463,6 +465,13 @@ padding: 1.2rem 0 0;
     font-size: 1rem;
     letter-spacing: 2px;
   
+}
+#newsletter input{
+    padding-left: 10px;
+}
+#newsletter input:focus{
+   box-shadow: 0px 0px 12px 0px #00FFFF;
+   outline: 0;
 }
 
 /* CONTACT US */
@@ -508,6 +517,7 @@ padding: 1.2rem 0 0;
     background-color: #ff5004;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 
 }
 
@@ -668,32 +678,4 @@ address a {
     background-color: orangered;
 }
 
-@media screen and (max-width:768px){
-    .slide-content{
-        margin: 0 10px;
-    }
-}
 
-.deg45:hover {
-
-    animation: rotation 2s ease-in;
-
-}
-
-@keyframes rotation {
-
-
-    0% {transform: scale(1.1) rotate(0);}
-    50% {transform: scale(1.6) rotate(45deg);} 
-    100% {transform: scale(1.6) rotate(45deg);}
-
-}
-
-.imganimation {
-
-
-    width: 100%;
-    overflow: hidden;
-
-
-}

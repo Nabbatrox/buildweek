@@ -68,6 +68,10 @@
 
 @media screen and (min-width:768px) {
 
+    .slide-content{
+        margin: 0 10px;
+    }
+
     /*////////////////////NAVBAR//////////////////////*/
     .ics, .bars{
         display: none;

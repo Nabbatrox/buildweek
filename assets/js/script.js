@@ -46,7 +46,7 @@ breakpoints: {
          
           
 
-          if(elementTop <= 250 && elementTop > -(s.clientHeight-250)){
+          if(elementTop <= 300 && elementTop > -(s.clientHeight-300)){
             console.log(s.clientHeight)
             console.log('.'+s.id)
               document.querySelector('.'+s.id).classList.add('target')
@@ -86,16 +86,10 @@ breakpoints: {
     element.classList.add("scrolled");
   };
   
-  const hideScrollElement = (element) => {
-    element.classList.remove("scrolled");
-  };
-  
   const handleScrollAnimation = () => {
     scrollElements.forEach((el) => {
-      if (elementInView(el, 1.25)) {
+      if (elementInView(el)) {
         displayScrollElement(el);
-      } else if (elementOutofView(el)) {
-        hideScrollElement(el)
       }
     })
   }
@@ -103,6 +97,7 @@ breakpoints: {
   window.addEventListener("scroll", () => { 
     handleScrollAnimation();
   });
+
 
 
 
