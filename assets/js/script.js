@@ -46,7 +46,7 @@ breakpoints: {
          
           
 
-          if(elementTop <= 250 && elementTop > -(s.clientHeight-250)){
+          if(elementTop <= 300 && elementTop > -(s.clientHeight-300)){
             console.log(s.clientHeight)
             console.log('.'+s.id)
               document.querySelector('.'+s.id).classList.add('target')
@@ -58,3 +58,46 @@ breakpoints: {
           
       })
   })
+
+
+
+
+  /* ANIMATIONS */
+
+  const scrollElements = document.querySelectorAll(".reveal");
+
+  const elementInView = (el, dividend = 1) => {
+    const elementTop = el.getBoundingClientRect().top;
+  
+    return (
+      elementTop <= 500
+    );
+  };
+  
+  const elementOutofView = (el) => {
+    const elementTop = el.getBoundingClientRect().top;
+  
+    return (
+      elementTop > (window.innerHeight || document.documentElement.clientHeight)
+    );
+  };
+  
+  const displayScrollElement = (element) => {
+    element.classList.add("scrolled");
+  };
+  
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el)) {
+        displayScrollElement(el);
+      }
+    })
+  }
+  
+  window.addEventListener("scroll", () => { 
+    handleScrollAnimation();
+  });
+
+
+
+
