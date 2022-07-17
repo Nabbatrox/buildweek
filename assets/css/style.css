@@ -144,11 +144,16 @@ a{
 
 }
 
-#blog, #newsletter {
+#blog, #newsletter{
 
     position: relative;
-    background-image: url(/assets/images/blog/blog-bg.jpg);
 
+}
+#blog{
+    background-image: url(/assets/images/blog/blog-bg.jpg);
+}
+#newsletter{
+    background-image: url(../images/subscribe-bg.jpg);
 }
 
 #blog::before, #newsletter::before, #imgcontainer::before {
