@@ -674,47 +674,6 @@ address a {
     }
 }
 
-#aboutus-flex img {
-
-    animation: fadeIn 1.9s ease-in;
-
-}
-
-#aboutus-flex h1 {
-
-    animation: fadeIn 1.6s ease-in;
-
-
-}
-
-#aboutus-flex p {
-
-    animation: fadeIn 1s ease-in;
-
-}
-
-
-@keyframes fadeIn {
-
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-
-}
-
-
-#blog-btn {
-
-    animation: move 2s linear;
-
-}
-
-@keyframes move {
-
-    0% {left:300}
-    100% {left:0}
-
-}
-
 .deg45:hover {
 
     animation: rotation 2s ease-in;
